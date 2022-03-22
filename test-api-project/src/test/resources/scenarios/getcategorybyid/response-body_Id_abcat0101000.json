@@ -1,0 +1,82 @@
+{
+  "id": "abcat0101000",
+  "name": "TVs",
+  "createdAt": "2016-11-17T17:57:04.285Z",
+  "updatedAt": "2016-11-17T17:57:04.285Z",
+  "subCategories": [
+    {
+      "id": "abcat0101001",
+      "name": "All Flat-Panel TVs",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z"
+    },
+    {
+      "id": "abcat0107000",
+      "name": "TV & Home Theater Accessories",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z"
+    },
+    {
+      "id": "pcmcat138100050024",
+      "name": "TV & Home Theater Services",
+      "createdAt": "2016-11-17T17:57:04.643Z",
+      "updatedAt": "2016-11-17T17:57:04.643Z"
+    },
+    {
+      "id": "pcmcat193400050018",
+      "name": "LED TVs",
+      "createdAt": "2016-11-17T17:57:05.399Z",
+      "updatedAt": "2016-11-17T17:57:05.399Z"
+    },
+    {
+      "id": "pcmcat205800050000",
+      "name": "3D TVs",
+      "createdAt": "2016-11-17T17:57:05.399Z",
+      "updatedAt": "2016-11-17T17:57:05.399Z"
+    },
+    {
+      "id": "pcmcat220700050011",
+      "name": "Smart TVs",
+      "createdAt": "2016-11-17T17:57:05.399Z",
+      "updatedAt": "2016-11-17T17:57:05.399Z"
+    },
+    {
+      "id": "pcmcat301000050010",
+      "name": "OLED TVs",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z"
+    },
+    {
+      "id": "pcmcat333800050003",
+      "name": "4K Ultra HD TVs",
+      "createdAt": "2016-11-17T17:57:04.643Z",
+      "updatedAt": "2016-11-17T17:57:04.643Z"
+    },
+    {
+      "id": "pcmcat333800050004",
+      "name": "Curved TVs",
+      "createdAt": "2016-11-17T17:57:04.643Z",
+      "updatedAt": "2016-11-17T17:57:04.643Z"
+    },
+    {
+      "id": "pcmcat333800050005",
+      "name": "Outdoor TVs",
+      "createdAt": "2016-11-17T17:57:04.643Z",
+      "updatedAt": "2016-11-17T17:57:04.643Z"
+    }
+  ],
+  "categoryPath": [
+    {
+      "id": "abcat0100000",
+      "name": "TV & Home Theater",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z"
+    },
+    {
+      "id": "abcat0101000",
+      "name": "TVs",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z"
+    }
+  ]
+}

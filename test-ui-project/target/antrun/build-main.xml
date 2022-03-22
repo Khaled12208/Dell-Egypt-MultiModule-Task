@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <echo message=" Welcome to my Web UI Automation Framework !" />
+    <echo message=" This Framework was designed by: Khaled M. Farh " />
+    <echo message=" E-Mail: Khaled.Farh@gmail.com " />
+  </target>
+</project>

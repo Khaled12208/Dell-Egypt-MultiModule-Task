@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.multimodule.uitesting.runners.Regression" time="84.675" tests="12" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-ui-project\target\test-classes;C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-ui-project\target\classes;C:\Users\Khaled M Farh\.m2\repository\com\multimodule\common-helpers\1.0\common-helpers-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\Khaled M Farh\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Khaled M Farh\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Khaled M Farh\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0\selenium-java-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0\selenium-api-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0\selenium-chrome-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0\selenium-chromium-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0\selenium-json-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0\selenium-devtools-v85-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0\selenium-devtools-v93-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0\selenium-devtools-v94-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.0.0\selenium-devtools-v95-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0\selenium-edge-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0\selenium-firefox-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0\selenium-firefox-xpi-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0\selenium-ie-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0\selenium-opera-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0\selenium-remote-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\beust\jcommander\1.81\jcommander-1.81.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-buffer\4.1.68.Final\netty-buffer-4.1.68.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-common\4.1.68.Final\netty-common-4.1.68.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport\4.1.68.Final\netty-transport-4.1.68.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-resolver\4.1.68.Final\netty-resolver-4.1.68.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-api\1.6.0\opentelemetry-api-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-context\1.6.0\opentelemetry-context-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.6.0\opentelemetry-exporter-logging-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.6.0-alpha\opentelemetry-sdk-metrics-1.6.0-alpha.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.6.0\opentelemetry-sdk-common-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.6.0\opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.6.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.6.0\opentelemetry-sdk-trace-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.6.0-alpha\opentelemetry-api-metrics-1.6.0-alpha.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.6.0\opentelemetry-sdk-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.6.0-alpha\opentelemetry-semconv-1.6.0-alpha.jar;C:\Users\Khaled M Farh\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Khaled M Farh\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Khaled M Farh\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0\selenium-http-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0\selenium-safari-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0\selenium-support-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi-ooxml\5.2.1\poi-ooxml-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.1\poi-ooxml-lite-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Khaled M Farh\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi\5.2.1\poi-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Khaled M Farh\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Khaled M Farh\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\slf4j-simple\1.7.32\slf4j-simple-1.7.32.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-core\6.8.1\cucumber-core-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-gherkin\6.8.1\cucumber-gherkin-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.8.1\cucumber-gherkin-messages-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\messages\13.1.0\messages-13.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-plugin\6.8.1\cucumber-plugin-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\docstring\6.8.1\docstring-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\create-meta\2.0.2\create-meta-2.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-testng\6.8.1\cucumber-testng-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Khaled M Farh\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Khaled M Farh\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-java\6.8.1\cucumber-java-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-picocontainer\6.8.1\cucumber-picocontainer-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Khaled M Farh\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.10.0\extentreports-cucumber6-adapter-2.10.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\extent-pdf-report\2.1.0\extent-pdf-report-2.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.5.0\cucumber-pdf-report-2.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\pdfbox\pdfbox\2.0.25\pdfbox-2.0.25.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\pdfbox\fontbox\2.0.25\fontbox-2.0.25.jar;C:\Users\Khaled M Farh\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\Khaled M Farh\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\Khaled M Farh\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Khaled M Farh\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\table-layout\1.4.0\table-layout-1.4.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.1.0\rest-assured-cucumber-pdf-report-1.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Khaled M Farh\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.0\htmlextentreporter-1.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Khaled M Farh\AppData\Local\Temp\surefire3176708424699917034\surefirebooter13796280080387567998.jar C:\Users\Khaled M Farh\AppData\Local\Temp\surefire3176708424699917034 2022-03-22T20-33-58_266-jvmRun1 surefire17477371186142779000tmp surefire_04513502053511949396tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-ui-project\target\test-classes;C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-ui-project\target\classes;C:\Users\Khaled M Farh\.m2\repository\com\multimodule\common-helpers\1.0\common-helpers-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\Khaled M Farh\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Khaled M Farh\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\Khaled M Farh\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0\selenium-java-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0\selenium-api-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0\selenium-chrome-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\auto\service\auto-service-annotations\1.0\auto-service-annotations-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\auto\service\auto-service\1.0\auto-service-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\auto\auto-common\1.0\auto-common-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0\selenium-chromium-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0\selenium-json-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.0.0\selenium-devtools-v85-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v93\4.0.0\selenium-devtools-v93-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.0.0\selenium-devtools-v94-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.0.0\selenium-devtools-v95-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0\selenium-edge-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0\selenium-firefox-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0\selenium-firefox-xpi-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0\selenium-ie-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0\selenium-opera-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0\selenium-remote-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\beust\jcommander\1.81\jcommander-1.81.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-buffer\4.1.68.Final\netty-buffer-4.1.68.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-codec-http\4.1.67.Final\netty-codec-http-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-codec\4.1.67.Final\netty-codec-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-handler\4.1.67.Final\netty-handler-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-common\4.1.68.Final\netty-common-4.1.68.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-epoll\4.1.67.Final\netty-transport-native-epoll-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.67.Final\netty-transport-native-kqueue-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.67.Final\netty-transport-native-unix-common-4.1.67.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport\4.1.68.Final\netty-transport-4.1.68.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-resolver\4.1.68.Final\netty-resolver-4.1.68.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-api\1.6.0\opentelemetry-api-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-context\1.6.0\opentelemetry-context-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.6.0\opentelemetry-exporter-logging-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.6.0-alpha\opentelemetry-sdk-metrics-1.6.0-alpha.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.6.0\opentelemetry-sdk-common-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.6.0\opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.6.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.6.0\opentelemetry-sdk-trace-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.6.0-alpha\opentelemetry-api-metrics-1.6.0-alpha.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.6.0\opentelemetry-sdk-1.6.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.6.0-alpha\opentelemetry-semconv-1.6.0-alpha.jar;C:\Users\Khaled M Farh\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\net\bytebuddy\byte-buddy\1.11.19\byte-buddy-1.11.19.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Khaled M Farh\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Khaled M Farh\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Khaled M Farh\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0\selenium-http-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0\selenium-safari-driver-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0\selenium-support-4.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi-ooxml\5.2.1\poi-ooxml-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.1\poi-ooxml-lite-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Khaled M Farh\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi\5.2.1\poi-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Khaled M Farh\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Khaled M Farh\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\slf4j-simple\1.7.32\slf4j-simple-1.7.32.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-core\6.8.1\cucumber-core-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-gherkin\6.8.1\cucumber-gherkin-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.8.1\cucumber-gherkin-messages-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\messages\13.1.0\messages-13.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-plugin\6.8.1\cucumber-plugin-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\docstring\6.8.1\docstring-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\create-meta\2.0.2\create-meta-2.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-testng\6.8.1\cucumber-testng-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Khaled M Farh\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Khaled M Farh\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-java\6.8.1\cucumber-java-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-picocontainer\6.8.1\cucumber-picocontainer-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Khaled M Farh\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.10.0\extentreports-cucumber6-adapter-2.10.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\extent-pdf-report\2.1.0\extent-pdf-report-2.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.5.0\cucumber-pdf-report-2.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\pdfbox\pdfbox\2.0.25\pdfbox-2.0.25.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\pdfbox\fontbox\2.0.25\fontbox-2.0.25.jar;C:\Users\Khaled M Farh\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\Khaled M Farh\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\Khaled M Farh\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Khaled M Farh\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\table-layout\1.4.0\table-layout-1.4.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.1.0\rest-assured-cucumber-pdf-report-1.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Khaled M Farh\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.0\htmlextentreporter-1.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Khaled M Farh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-ui-project"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Khaled M Farh\AppData\Local\Temp\surefire3176708424699917034\surefirebooter13796280080387567998.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
+    <property name="user.name" value="Khaled M Farh"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="sun.nio.ch.bugLevel" value=""/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Khaled M Farh\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\KHALED~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.2.3"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="user.dir" value="C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-ui-project"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.1\bin;C:\Program Files\PuTTY\;C:\Users\Khaled M Farh\AppData\Local\Android\Sdk;C:\Users\Khaled M Farh\AppData\Local\Android\Sdk\platform-tools;C:\minikube;C:\Program Files\Java\jdk-17.0.1;C:\Users\Khaled M Farh\apache-maven-3.8.4\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Khaled M Farh\AppData\Local\Microsoft\WindowsApps;C:\Users\Khaled M Farh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Khaled M Farh\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Users\Khaled M Farh\AppData\Local\Android\Sdk\platform-tools;C:\Users\Khaled M Farh\AppData\Local\Android\Sdk;C:\Program Files\Java\jdk-17.0.1\bin;C:\Program Files\Java\jdk-17.0.1;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;login invalid credentials&quot;, &quot;Optional[Login]&quot;](1)" classname="com.multimodule.uitesting.runners.Regression" time="61.644">
+    <failure message="The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)" type="org.apache.poi.poifs.filesystem.OfficeXmlFileException"><![CDATA[org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+]]></failure>
+    <system-out><![CDATA[
+@Regression @login @NegativeScenarios
+Scenario Outline: login invalid credentials                                                                              # src/test/resources/featuers/Login.feature:23
+
+@Regression @SortProduct @HappyScenario
+Scenario Outline: User wants to sort the products using sorting options                          # src/test/resources/featuers/SortProducts.feature:16
+
+@Regression @login @HappyScenario
+Scenario Outline: login with valid email and password                # src/test/resources/featuers/Login.feature:13
+
+@Regression @logout
+Scenario: user wants to logout                                                                        # src/test/resources/featuers/Lougout.feature:5
+
+@Regression @PlaceOrder @HappyScenario
+Scenario Outline: user try to place order                                                                                                    # src/test/resources/featuers/PlaceOrder.feature:22
+
+@Regression @SortProduct @HappyScenario
+Scenario Outline: User wants to sort the products using sorting options                          # src/test/resources/featuers/SortProducts.feature:14
+
+@Regression @SortProduct @HappyScenario
+Scenario Outline: User wants to sort the products using sorting options                          # src/test/resources/featuers/SortProducts.feature:15
+
+@Regression @PlaceOrder @HappyScenario
+Scenario Outline: user try to place order                                                                                                    # src/test/resources/featuers/PlaceOrder.feature:21
+
+@Regression @SortProduct @HappyScenario
+Scenario Outline: User wants to sort the products using sorting options                          # src/test/resources/featuers/SortProducts.feature:13
+
+@Regression @login @NegativeScenarios
+Scenario Outline: login invalid credentials                                       # src/test/resources/featuers/Login.feature:26
+
+@Regression @login @NegativeScenarios
+Scenario Outline: login invalid credentials                                                                              # src/test/resources/featuers/Login.feature:25
+
+@Regression @login @NegativeScenarios
+Scenario Outline: login invalid credentials                                                                              # src/test/resources/featuers/Login.feature:24
+[DEBUG] 2022-03-22 20:34:03.632 TestNG-PoolService-1.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.636 TestNG-PoolService-6.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.636 TestNG-PoolService-8.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.638 TestNG-PoolService-1.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.633 TestNG-PoolService-4.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.638 TestNG-PoolService-7.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.639 TestNG-PoolService-7.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.639 TestNG-PoolService-4.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.635 TestNG-PoolService-11.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.640 TestNG-PoolService-8.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.640 TestNG-PoolService-11.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.635 TestNG-PoolService-2.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.640 TestNG-PoolService-3.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.641 TestNG-PoolService-3.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.640 TestNG-PoolService-2.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.641 TestNG-PoolService-0.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.642 TestNG-PoolService-0.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.642 TestNG-PoolService-2.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.642 TestNG-PoolService-1.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.642 TestNG-PoolService-9.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.636 TestNG-PoolService-10.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.643 TestNG-PoolService-9.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.643 TestNG-PoolService-10.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.643 TestNG-PoolService-9.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.643 TestNG-PoolService-10.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.643 TestNG-PoolService-0.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.633 TestNG-PoolService-5.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowser.Line 67 - Execution Browser is CHROME
+[DEBUG] 2022-03-22 20:34:03.645 TestNG-PoolService-2.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.645 TestNG-PoolService-5.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.646 TestNG-PoolService-5.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.646 TestNG-PoolService-5.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.646 TestNG-PoolService-11.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.647 TestNG-PoolService-11.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.647 TestNG-PoolService-3.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.648 TestNG-PoolService-0.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.648 TestNG-PoolService-3.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.648 TestNG-PoolService-1.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.642 TestNG-PoolService-7.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.648 TestNG-PoolService-8.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.648 TestNG-PoolService-7.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.649 TestNG-PoolService-8.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.652 TestNG-PoolService-10.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.640 TestNG-PoolService-6.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setPrivacy.Line 49 - Execution privacy is PUBLIC
+[DEBUG] 2022-03-22 20:34:03.653 TestNG-PoolService-6.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.653 TestNG-PoolService-6.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.653 TestNG-PoolService-4.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setExecutionMode.Line 44 - Execution mode is HEADFULL
+[DEBUG] 2022-03-22 20:34:03.653 TestNG-PoolService-4.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:03.653 TestNG-PoolService-9.com.multimodule.uitesting.driver.configuration.TestConfigurationBuilder.setBrowserCustomDimensions.Line 55 - Execution Dimensions is (768, 1024)
+[DEBUG] 2022-03-22 20:34:21.219 TestNG-PoolService-1.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:23.802 TestNG-PoolService-4.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:23.935 TestNG-PoolService-11.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:26.294 TestNG-PoolService-9.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:26.477 TestNG-PoolService-10.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:27.783 TestNG-PoolService-3.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:28.930 TestNG-PoolService-6.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:29.091 TestNG-PoolService-2.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:31.380 TestNG-PoolService-5.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:32.286 TestNG-PoolService-8.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+[DEBUG] 2022-03-22 20:34:32.293 TestNG-PoolService-0.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+  Given A user in the login page                                                  # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()
+  Given A user in the login page                                                                                         # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()
+[DEBUG] 2022-03-22 20:34:34.966 TestNG-PoolService-7.com.multimodule.uitesting.driver.factory.DriverFactory.getWebDriver.Line 30 - invoking Chrome web browser
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  When user enter login "invalid username and valid password"  from  "testdata/LoginData.xlsx"                           # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(java.lang.String,java.lang.String)
+      org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at âœ½.user enter login "invalid username and valid password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  And click on the login button                                                                                          # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()
+  Then system displays an error message says "Epic sadface: Username and password do not match any user in this service" # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.systemDisplaysAnErrorMessageSays(java.lang.String)
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  When user enter login "Missing password"  from  "testdata/LoginData.xlsx"       # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(java.lang.String,java.lang.String)
+      org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at âœ½.user enter login "Missing password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  And click on the login button                                                   # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()
+  Then system displays an error message says "Epic sadface: Password is required" # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.systemDisplaysAnErrorMessageSays(java.lang.String)
+  Given A user in the login page                                                                                         # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  When user enter login "valid username and invalid password"  from  "testdata/LoginData.xlsx"                           # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(java.lang.String,java.lang.String)
+      org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at âœ½.user enter login "valid username and invalid password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  And click on the login button                                                                                          # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()
+  Then system displays an error message says "Epic sadface: Username and password do not match any user in this service" # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.systemDisplaysAnErrorMessageSays(java.lang.String)
+  Given A user in the login page                                                                                         # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  When user enter login "invalid username and password"  from  "testdata/LoginData.xlsx"                                 # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(java.lang.String,java.lang.String)
+      org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at âœ½.user enter login "invalid username and password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  And click on the login button                                                                                          # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()
+  Then system displays an error message says "Epic sadface: Username and password do not match any user in this service" # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.systemDisplaysAnErrorMessageSays(java.lang.String)
+  Given A user in the login page                                     # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  Given user is logged in with standard account user name "standard_user" and password "secret_sauce" # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.user_is_logged_in_with_standard_account_user_name_and_password(java.lang.String,java.lang.String)
+  Given user is logged in with standard account user name is "standard_user" and password "secret_sauce"                                     # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_is_logged_in_with_standard_account_user_name_x_and_password(java.lang.String,java.lang.String)
+
+    Embedding screenshot [image/png 163544 bytes]
+
+
+    Embedding screenshot [image/png 238522 bytes]
+
+  Given user is logged in with standard account user "standard_user" and password "secret_sauce" # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.user_is_logged_in_with_standard_account_user_and_password(java.lang.String,java.lang.String)
+  And user in the "Products" page                                                                                                            # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)
+  Given user is logged in with standard account user name is "standard_user" and password "secret_sauce"                                     # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_is_logged_in_with_standard_account_user_name_x_and_password(java.lang.String,java.lang.String)
+  Given user is logged in with standard account user "standard_user" and password "secret_sauce" # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.user_is_logged_in_with_standard_account_user_and_password(java.lang.String,java.lang.String)
+
+    Embedding screenshot [image/png 191951 bytes]
+
+
+    Embedding screenshot [image/png 281804 bytes]
+
+  And user in the "Products" page                                                                # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)
+
+    Embedding screenshot [image/png 123867 bytes]
+
+  Given user is logged in with standard account user "standard_user" and password "secret_sauce" # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.user_is_logged_in_with_standard_account_user_and_password(java.lang.String,java.lang.String)
+
+    Embedding screenshot [image/png 170831 bytes]
+
+  When user enter email "standard_user"  and password "secret_sauce" # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterNameAndPasswordInFields(java.lang.String,java.lang.String)
+  And user in the "Products" page                                                                                                            # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)
+
+    Embedding screenshot [image/png 281804 bytes]
+
+
+    Embedding screenshot [image/png 156123 bytes]
+
+
+    Embedding screenshot [image/png 179376 bytes]
+
+
+    Embedding screenshot [image/png 47831 bytes]
+
+  And user in the "Products" page                                                                # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)
+
+    Embedding screenshot [image/png 205448 bytes]
+
+  When select  one of the sorting type "Price (high to low)"                                     # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.select_one_of_the_sorting_type(java.lang.String)
+  And user in the "Products" page                                                                # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)
+  When user add item using "Sauce Labs Backpack" to the shopping cart                                                                        # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_add_item_using_to_the_shopping_cart(java.lang.String)
+  Given user is logged in with standard account user "standard_user" and password "secret_sauce" # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.user_is_logged_in_with_standard_account_user_and_password(java.lang.String,java.lang.String)
+
+    Embedding screenshot [image/png 250633 bytes]
+
+
+    Embedding screenshot [image/png 186024 bytes]
+
+
+    Embedding screenshot [image/png 280588 bytes]
+
+
+    Embedding screenshot [image/png 199142 bytes]
+
+  And click on the login button                                      # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()
+  When select  one of the sorting type "Name (A to Z)"                                           # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.select_one_of_the_sorting_type(java.lang.String)
+      org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5J36R0S', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f6729fd6239a4ec679724d05e93130d, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\KHALED~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61482/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f6729fd6239a4ec679724d05e93130d
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:129)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)
+	at com.multimodule.uitesting.testbase.TestBase.tearBrowser(TestBase.java:22)
+	at com.multimodule.uitesting.stepDefinitions.hooks.Hooks.tearDown(Hooks.java:32)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5J36R0S', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:125)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)
+	at com.multimodule.uitesting.testbase.TestBase.tearBrowser(TestBase.java:22)
+	at com.multimodule.uitesting.stepDefinitions.hooks.Hooks.tearDown(Hooks.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:110)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5J36R0S', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:119)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 more
+
+]]></system-out>
+    <system-err><![CDATA[[TestNG-PoolService-10] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-7] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-11] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-6] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-8] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-9] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-5] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-4] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-10] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-5] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-6] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-11] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-9] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-4] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-8] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-7] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 99.0.4844.51 (resolved driver for Chrome 99)
+[TestNG-PoolService-0] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Khaled M Farh\.cache\selenium\chromedriver\win32\99.0.4844.51\chromedriver.exe
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 61450
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 58263
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 62015
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 52788
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 52172
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 53056
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 62171
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 62903
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 50781
+Only loStarting ChromeDriver 99.0.4844.Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on cpoarlt  c6o1n4n5e8ct
+iOonnlsy  local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 49235
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 65250
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 22, 2022 8:34:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+Mar 22, 2022 8:34:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Mar 22, 2022 8:34:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 99, so returning the closest version found: 95
+Mar 22, 2022 8:34:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 99 of 95
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;login invalid credentials&quot;, &quot;Optional[Login]&quot;](2)" classname="com.multimodule.uitesting.runners.Regression" time="61.771">
+    <failure message="The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)" type="org.apache.poi.poifs.filesystem.OfficeXmlFileException"><![CDATA[org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+]]></failure>
+    <system-out><![CDATA[  And user in the "Products" page                                                                # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)
+
+    Embedding screenshot [image/png 213574 bytes]
+
+
+    Embedding screenshot [image/png 238522 bytes]
+
+
+    Embedding screenshot [image/png 189906 bytes]
+
+  And user clicks on the shopping cart icon                                                                                                  # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_clicks_on_the_shopping_cart_icon()
+  Then user navigated to home page                                   # com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userHasBeenLoggedOutAndInLoginPageAgain()
+  When select  one of the sorting type "Price (low to high)"                                     # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.select_one_of_the_sorting_type(java.lang.String)
+
+    Embedding screenshot [image/png 45345 bytes]
+
+
+    Embedding screenshot [image/png 225419 bytes]
+
+  When user add item using "Sauce Labs Bike Light; Sauce Labs Backpack" to the shopping cart                                                 # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_add_item_using_to_the_shopping_cart(java.lang.String)
+
+    Embedding screenshot [image/png 191196 bytes]
+
+  Then the items should be sorted based the selection "Price (high to low)"                      # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.the_items_should_be_sorted_based_the_selection(java.lang.String)
+      org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5J36R0S', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [72865c6c33da060be9536bfe6ba385a4, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\KHALED~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61481/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 72865c6c33da060be9536bfe6ba385a4
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:129)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)
+	at com.multimodule.uitesting.testbase.TestBase.tearBrowser(TestBase.java:22)
+	at com.multimodule.uitesting.stepDefinitions.hooks.Hooks.tearDown(Hooks.java:32)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5J36R0S', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:125)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)
+	at com.multimodule.uitesting.testbase.TestBase.tearBrowser(TestBase.java:22)
+	at com.multimodule.uitesting.stepDefinitions.hooks.Hooks.tearDown(Hooks.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:110)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-5J36R0S', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:119)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 3 more
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User wants to sort the products using sorting options&quot;, &quot;Optional[Sort Products]&quot;](3)" classname="com.multimodule.uitesting.runners.Regression" time="65.102">
+    <system-out><![CDATA[
+    Embedding screenshot [image/png 281374 bytes]
+
+
+    Embedding screenshot [image/png 250633 bytes]
+
+  And click on the checkout button                                                                                                           # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.click_on_the_checkout_button()
+  And user clicks on the shopping cart icon                                                                                                  # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_clicks_on_the_shopping_cart_icon()
+
+    Embedding screenshot [image/png 34125 bytes]
+
+  Then the items should be sorted based the selection "Name (A to Z)"                            # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.the_items_should_be_sorted_based_the_selection(java.lang.String)
+
+    Embedding screenshot [image/png 52513 bytes]
+
+
+    Embedding screenshot [image/png 280952 bytes]
+
+  When select  one of the sorting type "Name (Z to A)"                                           # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.select_one_of_the_sorting_type(java.lang.String)
+  And click on the checkout button                                                                                                           # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.click_on_the_checkout_button()
+  Then the items should be sorted based the selection "Price (low to high)"                      # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.the_items_should_be_sorted_based_the_selection(java.lang.String)
+
+    Embedding screenshot [image/png 34306 bytes]
+
+
+    Embedding screenshot [image/png 201843 bytes]
+
+
+    Embedding screenshot [image/png 252906 bytes]
+
+  And fill payment information from file "testdata/PaymentInfoData.json"                                                                     # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.fill_payment_information_from_file(java.lang.String)
+  And fill payment information from file "testdata/PaymentInfoData.json"                                                                     # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.fill_payment_information_from_file(java.lang.String)
+
+    Embedding screenshot [image/png 31845 bytes]
+
+  Then the items should be sorted based the selection "Name (Z to A)"                            # com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.the_items_should_be_sorted_based_the_selection(java.lang.String)
+
+    Embedding screenshot [image/png 31672 bytes]
+
+  And Click on continue button                                                                                                               # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.click_on_continue_button()
+  And Click on continue button                                                                                                               # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.click_on_continue_button()
+
+    Embedding screenshot [image/png 59897 bytes]
+
+
+    Embedding screenshot [image/png 201843 bytes]
+
+
+    Embedding screenshot [image/png 51216 bytes]
+
+  And the items total price is "Item Total: $39.98"                                                                                          # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.the_total_price_is(java.lang.String)
+  And the items total price is "Item Total: $29.99"                                                                                          # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.the_total_price_is(java.lang.String)
+
+    Embedding screenshot [image/png 59897 bytes]
+
+  And the total price  after tax is "Total: $43.18"                                                                                          # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.theTotalPriceAfterTax(java.lang.String)
+
+    Embedding screenshot [image/png 51216 bytes]
+
+
+    Embedding screenshot [image/png 59897 bytes]
+
+  And the total price  after tax is "Total: $32.39"                                                                                          # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.theTotalPriceAfterTax(java.lang.String)
+  And the taxes rate is "8" %                                                                                                                # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.theTaxRate(java.lang.String)
+
+    Embedding screenshot [image/png 51216 bytes]
+
+
+    Embedding screenshot [image/png 59897 bytes]
+
+  And the taxes rate is "8" %                                                                                                                # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.theTaxRate(java.lang.String)
+  And clicks on the finish button                                                                                                            # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.clicks_on_the_finish_button()
+
+    Embedding screenshot [image/png 51216 bytes]
+
+
+    Embedding screenshot [image/png 80812 bytes]
+
+  And clicks on the finish button                                                                                                            # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.clicks_on_the_finish_button()
+  Then the order has been created with thanks word "Your order has been dispatched, and will arrive just as fast as the pony can get there!" # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.the_order_has_been_created_with_thanks_word(java.lang.String)
+
+    Embedding screenshot [image/png 79928 bytes]
+
+  Then the order has been created with thanks word "Your order has been dispatched, and will arrive just as fast as the pony can get there!" # com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.the_order_has_been_created_with_thanks_word(java.lang.String)
+
+    Embedding screenshot [image/png 80812 bytes]
+
+
+    Embedding screenshot [image/png 79928 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;login invalid credentials&quot;, &quot;Optional[Login]&quot;](4)" classname="com.multimodule.uitesting.runners.Regression" time="65.292">
+    <failure message="The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)" type="org.apache.poi.poifs.filesystem.OfficeXmlFileException"><![CDATA[org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+]]></failure>
+  </testcase>
+  <testcase name="runScenario[&quot;user try to place order&quot;, &quot;Optional[User wants to place order]&quot;](5)" classname="com.multimodule.uitesting.runners.Regression" time="65.605"/>
+  <testcase name="runScenario[&quot;login invalid credentials&quot;, &quot;Optional[Login]&quot;](6)" classname="com.multimodule.uitesting.runners.Regression" time="65.668">
+    <failure message="The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)" type="org.apache.poi.poifs.filesystem.OfficeXmlFileException"><![CDATA[org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+]]></failure>
+  </testcase>
+  <testcase name="runScenario[&quot;User wants to sort the products using sorting options&quot;, &quot;Optional[Sort Products]&quot;](7)" classname="com.multimodule.uitesting.runners.Regression" time="66.043"/>
+  <testcase name="runScenario[&quot;login with valid email and password&quot;, &quot;Optional[Login]&quot;](8)" classname="com.multimodule.uitesting.runners.Regression" time="67.728">
+    <system-out><![CDATA[  When user click on menu button                                                                      # com.multimodule.uitesting.stepDefinitions.testSteps.LogoutTestSteps.userClickOnMenuButton()
+
+    Embedding screenshot [image/png 237094 bytes]
+
+  And click on logout button                                                                          # com.multimodule.uitesting.stepDefinitions.testSteps.LogoutTestSteps.clickOnLogoutButton()
+
+    Embedding screenshot [image/png 48596 bytes]
+
+  Then user has been logged out and in login page again                                               # com.multimodule.uitesting.stepDefinitions.testSteps.LogoutTestSteps.userLoggedOutToLoginPage()
+
+    Embedding screenshot [image/png 48596 bytes]
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User wants to sort the products using sorting options&quot;, &quot;Optional[Sort Products]&quot;](9)" classname="com.multimodule.uitesting.runners.Regression" time="68.28"/>
+  <testcase name="runScenario[&quot;user try to place order&quot;, &quot;Optional[User wants to place order]&quot;](10)" classname="com.multimodule.uitesting.runners.Regression" time="69.814"/>
+  <testcase name="runScenario[&quot;User wants to sort the products using sorting options&quot;, &quot;Optional[Sort Products]&quot;](11)" classname="com.multimodule.uitesting.runners.Regression" time="70.114"/>
+  <testcase name="runScenario[&quot;user wants to logout&quot;, &quot;Optional[User logout]&quot;](12)" classname="com.multimodule.uitesting.runners.Regression" time="70.478"/>
+</testsuite>

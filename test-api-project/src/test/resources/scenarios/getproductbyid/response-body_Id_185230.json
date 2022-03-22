@@ -1,0 +1,41 @@
+{
+  "id": 185230,
+  "name": "Duracell - C Batteries (4-Pack)",
+  "type": "HardGood",
+  "price": 8.99,
+  "upc": "041333440019",
+  "shipping": 0,
+  "description": "Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack",
+  "manufacturer": "Duracell",
+  "model": "MN1400R4Z",
+  "url": "http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC",
+  "image": "http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg",
+  "createdAt": "2016-11-17T17:58:03.298Z",
+  "updatedAt": "2016-11-17T17:58:03.298Z",
+  "categories": [
+    {
+      "id": "abcat0208002",
+      "name": "Alkaline Batteries",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z"
+    },
+    {
+      "id": "pcmcat248700050021",
+      "name": "Housewares",
+      "createdAt": "2016-11-17T17:57:05.399Z",
+      "updatedAt": "2016-11-17T17:57:05.399Z"
+    },
+    {
+      "id": "pcmcat303600050001",
+      "name": "Household Batteries",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z"
+    },
+    {
+      "id": "pcmcat312300050015",
+      "name": "Connected Home & Housewares",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.multimodule.apitesting.runners.Regression
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 28.068 s <<< FAILURE! - in com.multimodule.apitesting.runners.Regression
+com.multimodule.apitesting.runners.Regression.runScenario["User try to add the category with valid data", "Optional[User Wants to add a new category]"](18)  Time elapsed: 10.226 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+
+com.multimodule.apitesting.runners.Regression.runScenario["User try to add the product with valid data", "Optional[User Wants to add a new product]"](19)  Time elapsed: 10.452 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+
+com.multimodule.apitesting.runners.Regression.runScenario["User try to update the product with valid data", "Optional[User Wants to update a product data]"](21)  Time elapsed: 11.787 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]
+    level: "warning"
+    schema: {"loadingURI":"#","pointer":""}
+    domain: "syntax"
+    ignored: ["image","manufacturer","model","name","price","shipping","upc","url"]
+error: instance type (object) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "object"
+    expected: ["string"]
+
+  Actual: {"id":312290,"name":"1","type":"Product Patched","price":1222,"upc":"string","shipping":2666,"description":"Product Patched","manufacturer":"Test product","model":"Product Patched","url":"Test product","image":"Test product","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2022-03-22T18:03:18.969Z"}
+
+
+com.multimodule.apitesting.runners.Regression.runScenario["User try to update the product with invalid data Missing product mandatory items", "Optional[User Wants to update a product data]"](22)  Time elapsed: 12.267 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+
+com.multimodule.apitesting.runners.Regression.runScenario["User try to update the category with invalid data Missing product mandatory items", "Optional[update a category data]"](23)  Time elapsed: 12.339 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+
+com.multimodule.apitesting.runners.Regression.runScenario["User try to update the product with valid data", "Optional[User Wants to update a product data]"](24)  Time elapsed: 12.507 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]
+    level: "warning"
+    schema: {"loadingURI":"#","pointer":""}
+    domain: "syntax"
+    ignored: ["image","manufacturer","model","name","price","shipping","upc","url"]
+error: instance type (object) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "object"
+    expected: ["string"]
+
+  Actual: {"id":312290,"name":"1","type":"Product Patched","price":1222,"upc":"string","shipping":2666,"description":"Product Patched","manufacturer":"Test product","model":"Product Patched","url":"Test product","image":"Test product","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2022-03-22T18:03:18.969Z"}
+
+

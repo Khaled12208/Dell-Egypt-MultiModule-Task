@@ -1,0 +1,10 @@
+{
+  "name": "BadRequest",
+  "message": "Invalid Parameters",
+  "code": 400,
+  "className": "bad-request",
+  "data": {},
+  "errors": [
+    "should have required property 'name'"
+  ]
+}

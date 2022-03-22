@@ -1,0 +1,3 @@
+com\multimodule\apitesting\stepDefinitions\hooks\Hooks.class
+com\multimodule\apitesting\runners\Smoke.class
+com\multimodule\apitesting\runners\Regression.class

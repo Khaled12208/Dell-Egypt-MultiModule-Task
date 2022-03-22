@@ -1,0 +1,8 @@
+{
+  "name": "GeneralError",
+  "message": "Not Acceptable",
+  "code": 500,
+  "className": "general-error",
+  "data": {},
+  "errors": {}
+}

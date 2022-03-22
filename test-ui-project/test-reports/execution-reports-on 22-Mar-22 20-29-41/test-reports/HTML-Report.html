@@ -1,0 +1,1988 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title></title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+        <a href="#!" class="brand-logo black"><img src="http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'></span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Mar 22, 2022 08:29:41 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@NegativeScenarios</a></li>
+					<li><a href='#'>@logout</a></li>
+					<li><a href='#'>@PlaceOrder</a></li>
+					<li><a href='#'>@SortProduct</a></li>
+					<li><a href='#'>@HappyScenario</a></li>
+					<li><a href='#'>@Regression</a></li>
+					<li><a href='#'>@login</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Features</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$75%'>
+                    <span class='strong'>3</span> features passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
+                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Scenarios</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='66%'>
+                    <span class='strong'>8</span> scenarios passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
+                    4</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='90%'>
+                    <span class='strong'>108</span> steps passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='3%'>
+                    4</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='6%'>
+                    8</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Sort Products</span>
+						<span class='test-time'>Mar 22, 2022 08:29:43 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='2' status='Pass'>
+
+	<span class='duration right label'>00 01 00.901</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User wants to sort the products using sorting options</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>sortType</td></tr><tr><td>Name (A to Z)</td></tr><tr><td>Name (Z to A)</td></tr><tr><td>Price (low to high)</td></tr><tr><td>Price (high to low)</td></tr></table><br><br><table class='markup-table table '><tr><td>sortType</td></tr><tr><td>Name (A to Z)</td></tr><tr><td>Name (Z to A)</td></tr><tr><td>Price (low to high)</td></tr><tr><td>Price (high to low)</td></tr></table><br><br><table class='markup-table table '><tr><td>sortType</td></tr><tr><td>Name (A to Z)</td></tr><tr><td>Name (Z to A)</td></tr><tr><td>Price (low to high)</td></tr><tr><td>Price (high to low)</td></tr></table><br><br><table class='markup-table table '><tr><td>sortType</td></tr><tr><td>Name (A to Z)</td></tr><tr><td>Name (Z to A)</td></tr><tr><td>Price (low to high)</td></tr><tr><td>Price (high to low)</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@SortProduct</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='3' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User wants to sort the products using sorting options</div>
+
+				<div class='category-list'>
+						<span class='category label'>@SortProduct</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='58' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.user_is_logged_in_with_standard_account_user_and_password(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is logged in with standard account user "standard_user" and password "secret_sauce"</h6>
+
+				</li>
+				<li test-id='98' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded19.png' src='../Screenshots/embedded19.png'>
+							</div>
+				</li>
+				<li test-id='100' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user in the "Products" page</h6>
+
+				</li>
+				<li test-id='101' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded22.png' src='../Screenshots/embedded22.png'>
+							</div>
+				</li>
+				<li test-id='106' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.select_one_of_the_sorting_type(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When select  one of the sorting type "Name (A to Z)"</h6>
+
+				</li>
+				<li test-id='110' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded25.png' src='../Screenshots/embedded25.png'>
+							</div>
+				</li>
+				<li test-id='111' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.the_items_should_be_sorted_based_the_selection(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the items should be sorted based the selection "Name (A to Z)"</h6>
+
+				</li>
+				<li test-id='117' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded29.png' src='../Screenshots/embedded29.png'>
+							</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='4' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User wants to sort the products using sorting options</div>
+
+				<div class='category-list'>
+						<span class='category label'>@SortProduct</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='36' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.user_is_logged_in_with_standard_account_user_and_password(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is logged in with standard account user "standard_user" and password "secret_sauce"</h6>
+
+				</li>
+				<li test-id='81' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded18.png' src='../Screenshots/embedded18.png'>
+							</div>
+				</li>
+				<li test-id='99' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user in the "Products" page</h6>
+
+				</li>
+				<li test-id='105' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded24.png' src='../Screenshots/embedded24.png'>
+							</div>
+				</li>
+				<li test-id='109' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.select_one_of_the_sorting_type(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When select  one of the sorting type "Name (Z to A)"</h6>
+
+				</li>
+				<li test-id='123' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded33.png' src='../Screenshots/embedded33.png'>
+							</div>
+				</li>
+				<li test-id='126' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.the_items_should_be_sorted_based_the_selection(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the items should be sorted based the selection "Name (Z to A)"</h6>
+
+				</li>
+				<li test-id='132' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded36.png' src='../Screenshots/embedded36.png'>
+							</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='10' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User wants to sort the products using sorting options</div>
+
+				<div class='category-list'>
+						<span class='category label'>@SortProduct</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='33' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.user_is_logged_in_with_standard_account_user_and_password(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is logged in with standard account user "standard_user" and password "secret_sauce"</h6>
+
+				</li>
+				<li test-id='49' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded6.png' src='../Screenshots/embedded6.png'>
+							</div>
+				</li>
+				<li test-id='59' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user in the "Products" page</h6>
+
+				</li>
+				<li test-id='61' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded8.png' src='../Screenshots/embedded8.png'>
+							</div>
+				</li>
+				<li test-id='63' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.select_one_of_the_sorting_type(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When select  one of the sorting type "Price (high to low)"</h6>
+
+				</li>
+				<li test-id='97' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded21.png' src='../Screenshots/embedded21.png'>
+							</div>
+				</li>
+				<li test-id='102' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.the_items_should_be_sorted_based_the_selection(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the items should be sorted based the selection "Price (high to low)"</h6>
+
+				</li>
+				<li test-id='128' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded35.png' src='../Screenshots/embedded35.png'>
+							</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='24' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User wants to sort the products using sorting options</div>
+
+				<div class='category-list'>
+						<span class='category label'>@SortProduct</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='37' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.user_is_logged_in_with_standard_account_user_and_password(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is logged in with standard account user "standard_user" and password "secret_sauce"</h6>
+
+				</li>
+				<li test-id='64' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded9.png' src='../Screenshots/embedded9.png'>
+							</div>
+				</li>
+				<li test-id='66' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user in the "Products" page</h6>
+
+				</li>
+				<li test-id='84' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded20.png' src='../Screenshots/embedded20.png'>
+							</div>
+				</li>
+				<li test-id='104' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.select_one_of_the_sorting_type(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When select  one of the sorting type "Price (low to high)"</h6>
+
+				</li>
+				<li test-id='119' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded30.png' src='../Screenshots/embedded30.png'>
+							</div>
+				</li>
+				<li test-id='121' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.SortProductsTestSteps.the_items_should_be_sorted_based_the_selection(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the items should be sorted based the selection "Price (low to high)"</h6>
+
+				</li>
+				<li test-id='124' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded32.png' src='../Screenshots/embedded32.png'>
+							</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Login</span>
+						<span class='test-time'>Mar 22, 2022 08:29:43 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='6' status='Pass'>
+
+	<span class='duration right label'>00 00 55.563</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: login with valid email and password</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>password</td></tr><tr><td>standard_user</td><td>secret_sauce</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@login</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='7' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>login with valid email and password</div>
+
+				<div class='category-list'>
+						<span class='category label'>@login</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='38' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given A user in the login page</h6>
+
+				</li>
+				<li test-id='39' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded1.png' src='../Screenshots/embedded1.png'>
+							</div>
+				</li>
+				<li test-id='42' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterNameAndPasswordInFields(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user enter email "standard_user"  and password "secret_sauce"</h6>
+
+				</li>
+				<li test-id='43' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded2.png' src='../Screenshots/embedded2.png'>
+							</div>
+				</li>
+				<li test-id='44' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on the login button</h6>
+
+				</li>
+				<li test-id='45' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded5.png' src='../Screenshots/embedded5.png'>
+							</div>
+				</li>
+				<li test-id='55' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userHasBeenLoggedOutAndInLoginPageAgain()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user navigated to home page</h6>
+
+				</li>
+				<li test-id='60' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded7.png' src='../Screenshots/embedded7.png'>
+							</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='8' status='Fail'>
+
+	<span class='duration right label'>00 00 59.783</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: login invalid credentials</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>case</td><td>dataFile</td><td>message</td></tr><tr><td>invalid username and valid password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>valid username and invalid password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>invalid username and password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>Missing password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Password is required</td></tr></table><br><br><table class='markup-table table '><tr><td>case</td><td>dataFile</td><td>message</td></tr><tr><td>invalid username and valid password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>valid username and invalid password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>invalid username and password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>Missing password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Password is required</td></tr></table><br><br><table class='markup-table table '><tr><td>case</td><td>dataFile</td><td>message</td></tr><tr><td>invalid username and valid password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>valid username and invalid password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>invalid username and password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>Missing password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Password is required</td></tr></table><br><br><table class='markup-table table '><tr><td>case</td><td>dataFile</td><td>message</td></tr><tr><td>invalid username and valid password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>valid username and invalid password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>invalid username and password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Username and password do not match any user in this service</td></tr><tr><td>Missing password</td><td>testdata/LoginData.xlsx</td><td>Epic sadface: Password is required</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@NegativeScenarios</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='9' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>login invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@login</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='57' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given A user in the login page</h6>
+
+				</li>
+				<li test-id='78' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded14.png' src='../Screenshots/embedded14.png'>
+							</div>
+				</li>
+				<li test-id='82' class='gc when Fail' status='Fail'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(java.lang.String,java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When user enter login "valid username and invalid password"  from  "testdata/LoginData.xlsx"</h6>
+
+							<textarea disabled class="code-block">org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at ?.user enter login "valid username and invalid password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+</textarea>
+				</li>
+				<li test-id='83' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded16.png' src='../Screenshots/embedded16.png'>
+							</div>
+				</li>
+				<li test-id='91' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And click on the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='93' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.systemDisplaysAnErrorMessageSays(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then system displays an error message says "Epic sadface: Username and password do not match any user in this service"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='18' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>login invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@login</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='67' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given A user in the login page</h6>
+
+				</li>
+				<li test-id='69' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded10.png' src='../Screenshots/embedded10.png'>
+							</div>
+				</li>
+				<li test-id='70' class='gc when Fail' status='Fail'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(java.lang.String,java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When user enter login "invalid username and password"  from  "testdata/LoginData.xlsx"</h6>
+
+							<textarea disabled class="code-block">org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at ?.user enter login "invalid username and password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+</textarea>
+				</li>
+				<li test-id='71' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded11.png' src='../Screenshots/embedded11.png'>
+							</div>
+				</li>
+				<li test-id='72' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And click on the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='74' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.systemDisplaysAnErrorMessageSays(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then system displays an error message says "Epic sadface: Username and password do not match any user in this service"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='20' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>login invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@login</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='34' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given A user in the login page</h6>
+
+				</li>
+				<li test-id='40' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded3.png' src='../Screenshots/embedded3.png'>
+							</div>
+				</li>
+				<li test-id='46' class='gc when Fail' status='Fail'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(java.lang.String,java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When user enter login "Missing password"  from  "testdata/LoginData.xlsx"</h6>
+
+							<textarea disabled class="code-block">org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at ?.user enter login "Missing password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+</textarea>
+				</li>
+				<li test-id='47' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded4.png' src='../Screenshots/embedded4.png'>
+							</div>
+				</li>
+				<li test-id='50' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And click on the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='52' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.systemDisplaysAnErrorMessageSays(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then system displays an error message says "Epic sadface: Password is required"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='26' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>login invalid credentials</div>
+
+				<div class='category-list'>
+						<span class='category label'>@login</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='56' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.logInPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given A user in the login page</h6>
+
+				</li>
+				<li test-id='68' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded13.png' src='../Screenshots/embedded13.png'>
+							</div>
+				</li>
+				<li test-id='79' class='gc when Fail' status='Fail'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(java.lang.String,java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When user enter login "invalid username and valid password"  from  "testdata/LoginData.xlsx"</h6>
+
+							<textarea disabled class="code-block">org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at ?.user enter login "invalid username and valid password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+</textarea>
+				</li>
+				<li test-id='80' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded15.png' src='../Screenshots/embedded15.png'>
+							</div>
+				</li>
+				<li test-id='85' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.clickOnTheLoginButton()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And click on the login button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='87' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.systemDisplaysAnErrorMessageSays(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then system displays an error message says "Epic sadface: Username and password do not match any user in this service"</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>User wants to place order</span>
+						<span class='test-time'>Mar 22, 2022 08:29:43 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='12' status='Pass'>
+
+	<span class='duration right label'>00 00 59.745</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: user try to place order</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>itemsNames</td><td>itemsTotalPrice</td><td>totalPrice</td></tr><tr><td>Sauce Labs Backpack</td><td>Item Total: $29.99</td><td>Total: $32.39</td></tr><tr><td>Sauce Labs Bike Light; Sauce Labs Backpack</td><td>Item Total: $39.98</td><td>Total: $43.18</td></tr></table><br><br><table class='markup-table table '><tr><td>itemsNames</td><td>itemsTotalPrice</td><td>totalPrice</td></tr><tr><td>Sauce Labs Backpack</td><td>Item Total: $29.99</td><td>Total: $32.39</td></tr><tr><td>Sauce Labs Bike Light; Sauce Labs Backpack</td><td>Item Total: $39.98</td><td>Total: $43.18</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@PlaceOrder</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='13' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>user try to place order</div>
+
+				<div class='category-list'>
+						<span class='category label'>@PlaceOrder</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='35' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_is_logged_in_with_standard_account_user_name_x_and_password(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is logged in with standard account user name is "standard_user" and password "secret_sauce"</h6>
+
+				</li>
+				<li test-id='65' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded12.png' src='../Screenshots/embedded12.png'>
+							</div>
+				</li>
+				<li test-id='77' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user in the "Products" page</h6>
+
+				</li>
+				<li test-id='90' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded17.png' src='../Screenshots/embedded17.png'>
+							</div>
+				</li>
+				<li test-id='96' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_add_item_using_to_the_shopping_cart(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user add item using "Sauce Labs Backpack" to the shopping cart</h6>
+
+				</li>
+				<li test-id='113' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded27.png' src='../Screenshots/embedded27.png'>
+							</div>
+				</li>
+				<li test-id='115' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_clicks_on_the_shopping_cart_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on the shopping cart icon</h6>
+
+				</li>
+				<li test-id='120' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded31.png' src='../Screenshots/embedded31.png'>
+							</div>
+				</li>
+				<li test-id='122' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.click_on_the_checkout_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on the checkout button</h6>
+
+				</li>
+				<li test-id='127' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded34.png' src='../Screenshots/embedded34.png'>
+							</div>
+				</li>
+				<li test-id='129' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.fill_payment_information_from_file(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And fill payment information from file "testdata/PaymentInfoData.json"</h6>
+
+				</li>
+				<li test-id='136' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded39.png' src='../Screenshots/embedded39.png'>
+							</div>
+				</li>
+				<li test-id='138' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.click_on_continue_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click on continue button</h6>
+
+				</li>
+				<li test-id='140' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded41.png' src='../Screenshots/embedded41.png'>
+							</div>
+				</li>
+				<li test-id='142' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.the_total_price_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the items total price is "Item Total: $29.99"</h6>
+
+				</li>
+				<li test-id='143' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded42.png' src='../Screenshots/embedded42.png'>
+							</div>
+				</li>
+				<li test-id='144' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.theTotalPriceAfterTax(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the total price  after tax is "Total: $32.39"</h6>
+
+				</li>
+				<li test-id='145' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded43.png' src='../Screenshots/embedded43.png'>
+							</div>
+				</li>
+				<li test-id='146' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.theTaxRate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the taxes rate is "8" %</h6>
+
+				</li>
+				<li test-id='147' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded44.png' src='../Screenshots/embedded44.png'>
+							</div>
+				</li>
+				<li test-id='149' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.clicks_on_the_finish_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the finish button</h6>
+
+				</li>
+				<li test-id='151' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded46.png' src='../Screenshots/embedded46.png'>
+							</div>
+				</li>
+				<li test-id='153' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.the_order_has_been_created_with_thanks_word(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the order has been created with thanks word "Your order has been dispatched, and will arrive just as fast as the pony can get there!"</h6>
+
+				</li>
+				<li test-id='154' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded48.png' src='../Screenshots/embedded48.png'>
+							</div>
+				</li>
+			</ul>
+		</li>
+		<li test-id='22' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>user try to place order</div>
+
+				<div class='category-list'>
+						<span class='category label'>@PlaceOrder</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='48' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_is_logged_in_with_standard_account_user_name_x_and_password(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is logged in with standard account user name is "standard_user" and password "secret_sauce"</h6>
+
+				</li>
+				<li test-id='108' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded26.png' src='../Screenshots/embedded26.png'>
+							</div>
+				</li>
+				<li test-id='112' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_in_the_page(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user in the "Products" page</h6>
+
+				</li>
+				<li test-id='114' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded28.png' src='../Screenshots/embedded28.png'>
+							</div>
+				</li>
+				<li test-id='116' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_add_item_using_to_the_shopping_cart(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user add item using "Sauce Labs Bike Light; Sauce Labs Backpack" to the shopping cart</h6>
+
+				</li>
+				<li test-id='131' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded37.png' src='../Screenshots/embedded37.png'>
+							</div>
+				</li>
+				<li test-id='133' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.user_clicks_on_the_shopping_cart_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user clicks on the shopping cart icon</h6>
+
+				</li>
+				<li test-id='135' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded38.png' src='../Screenshots/embedded38.png'>
+							</div>
+				</li>
+				<li test-id='137' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.click_on_the_checkout_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on the checkout button</h6>
+
+				</li>
+				<li test-id='139' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded40.png' src='../Screenshots/embedded40.png'>
+							</div>
+				</li>
+				<li test-id='141' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.fill_payment_information_from_file(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And fill payment information from file "testdata/PaymentInfoData.json"</h6>
+
+				</li>
+				<li test-id='148' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded45.png' src='../Screenshots/embedded45.png'>
+							</div>
+				</li>
+				<li test-id='150' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.click_on_continue_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click on continue button</h6>
+
+				</li>
+				<li test-id='152' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded47.png' src='../Screenshots/embedded47.png'>
+							</div>
+				</li>
+				<li test-id='155' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.the_total_price_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the items total price is "Item Total: $39.98"</h6>
+
+				</li>
+				<li test-id='156' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded49.png' src='../Screenshots/embedded49.png'>
+							</div>
+				</li>
+				<li test-id='158' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.theTotalPriceAfterTax(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the total price  after tax is "Total: $43.18"</h6>
+
+				</li>
+				<li test-id='159' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded50.png' src='../Screenshots/embedded50.png'>
+							</div>
+				</li>
+				<li test-id='160' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.theTaxRate(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And the taxes rate is "8" %</h6>
+
+				</li>
+				<li test-id='161' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded51.png' src='../Screenshots/embedded51.png'>
+							</div>
+				</li>
+				<li test-id='162' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.clicks_on_the_finish_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks on the finish button</h6>
+
+				</li>
+				<li test-id='163' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded52.png' src='../Screenshots/embedded52.png'>
+							</div>
+				</li>
+				<li test-id='164' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.uitesting.stepDefinitions.testSteps.PlaceOrderTestSteps.the_order_has_been_created_with_thanks_word(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the order has been created with thanks word "Your order has been dispatched, and will arrive just as fast as the pony can get there!"</h6>
+
+				</li>
+				<li test-id='165' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+
+							<div class="node-step">screenshot</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded53.png' src='../Screenshots/embedded53.png'>
+							</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>User logout</span>
+						<span class='test-time'>Mar 22, 2022 08:29:43 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='15' status='Pass'>
+
+	<span class='duration right label'>00 01 00.754</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: user wants to logout</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@logout</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='41' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.user_is_logged_in_with_standard_account_user_name_and_password(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user is logged in with standard account user name "standard_user" and password "secret_sauce"</div>
+
+
+		</li>
+		<li test-id='103' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">screenshot</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded23.png' src='../Screenshots/embedded23.png'>
+					</div>
+		</li>
+		<li test-id='107' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.uitesting.stepDefinitions.testSteps.LogoutTestSteps.userClickOnMenuButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user click on menu button</div>
+
+
+		</li>
+		<li test-id='167' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">screenshot</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded54.png' src='../Screenshots/embedded54.png'>
+					</div>
+		</li>
+		<li test-id='168' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.uitesting.stepDefinitions.testSteps.LogoutTestSteps.clickOnLogoutButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on logout button</div>
+
+
+		</li>
+		<li test-id='169' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">screenshot</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded55.png' src='../Screenshots/embedded55.png'>
+					</div>
+		</li>
+		<li test-id='170' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.uitesting.stepDefinitions.testSteps.LogoutTestSteps.userLoggedOutToLoginPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then user has been logged out and in login page again</div>
+
+
+		</li>
+		<li test-id='171' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.multimodule.uitesting.stepDefinitions.hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">screenshot</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../Screenshots/embedded56.png' src='../Screenshots/embedded56.png'>
+					</div>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@NegativeScenarios</span>
+						<span class='category-status right'>
+						<span class='label fail'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 5</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='8'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='9'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='18'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='20'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='26'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@logout</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='15'>user wants to logout</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@PlaceOrder</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='12'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='13'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='22'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SortProduct</span>
+						<span class='category-status right'>
+						<span class='label pass'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 5</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='2'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='3'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='4'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='10'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='24'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@HappyScenario</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='2'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='3'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='4'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='6'>login with valid email and password</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='7'>login with valid email and password</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='10'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='12'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='13'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='22'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='24'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Regression</span>
+						<span class='category-status right'>
+						<span class='label pass'>11</span>
+						<span class='label fail'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 11</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='2'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='3'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='4'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='6'>login with valid email and password</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='7'>login with valid email and password</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='9'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='10'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='12'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='13'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='15'>user wants to logout</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='18'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='20'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='22'>user try to place order</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='24'>User wants to sort the products using sorting options</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='26'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@login</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						<span class='label fail'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='6'>login with valid email and password</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='7'>login with valid email and password</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='9'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='18'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='20'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:29:43 PM</td>
+										<td class='linked' test-id='26'>login invalid credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.apache.poi.poifs.filesystem.OfficeXmlFileException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 08:30:19 PM</td>
+										<td class='linked' test-id='46'>When user enter login "Missing password"  from  "testdata/LoginData.xlsx"</td>
+										<td>
+											<textarea disabled class="code-block">org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at ?.user enter login "Missing password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:30:24 PM</td>
+										<td class='linked' test-id='70'>When user enter login "invalid username and password"  from  "testdata/LoginData.xlsx"</td>
+										<td>
+											<textarea disabled class="code-block">org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at ?.user enter login "Missing password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:30:25 PM</td>
+										<td class='linked' test-id='79'>When user enter login "invalid username and valid password"  from  "testdata/LoginData.xlsx"</td>
+										<td>
+											<textarea disabled class="code-block">org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at ?.user enter login "Missing password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 08:30:26 PM</td>
+										<td class='linked' test-id='82'>When user enter login "valid username and invalid password"  from  "testdata/LoginData.xlsx"</td>
+										<td>
+											<textarea disabled class="code-block">org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:128)
+	at org.apache.poi.poifs.storage.HeaderBlock.<init>(HeaderBlock.java:115)
+	at org.apache.poi.poifs.filesystem.POIFSFileSystem.<init>(POIFSFileSystem.java:326)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:431)
+	at org.apache.poi.hssf.usermodel.HSSFWorkbook.<init>(HSSFWorkbook.java:411)
+	at com.multimodule.helpers.TestResourcesReaders.readExcelSheetByIndex(TestResourcesReaders.java:54)
+	at com.multimodule.uitesting.stepDefinitions.testSteps.LoginTestSteps.userEnterLoginFrom(LoginTestSteps.java:52)
+	at ?.user enter login "Missing password"  from  "testdata/LoginData.xlsx"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-ui-project/src/test/resources/featuers/Login.feature:18)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>12</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>120</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Mar 22, 2022 08:29:41 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Mar 22, 2022 08:30:44 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>00 01 02.580</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Skipped</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@NegativeScenarios</td>
+							<td>0</td>
+							<td>5</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@logout</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@PlaceOrder</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@SortProduct</td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@HappyScenario</td>
+							<td>10</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Regression</td>
+							<td>11</td>
+							<td>4</td>
+							<td>0</td>
+							<td>
+									73.333%
+							</td>
+						</tr>
+						<tr>
+							<td>@login</td>
+							<td>2</td>
+							<td>4</td>
+							<td>0</td>
+							<td>
+									33.333%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 4,
+				passParent: 3,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				childCount: 12,
+				passChild: 8,
+				failChild: 4,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				grandChildCount: 120,
+				passGrandChild: 108,
+				failGrandChild: 4,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 8,
+				infoGrandChild: 0,
+			};
+			</script>
+		
+		<script>
+			var timeline = {
+			        "Sort Products":60.905,"Login":59.787,"User wants to place order":59.745,"User logout":60.754
+			};
+		</script>
+		
+		  <script src='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		
+		<script type='text/javascript'>
+				
+		</script> 
+
+	</body>
+</html>

@@ -1,0 +1,14 @@
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\category\DeleteCategory.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\products\GetAllProduct.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\hooks\Hooks.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\base\TestBase.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\category\GetCategoryByID.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\products\UpdateProductByID.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\runners\Regression.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\products\PostNewProduct.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\category\GetAllCategories.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\category\PostNewCategory.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\runners\Smoke.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\category\UpdateCategoryByID.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\products\GetProductByID.java
+C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\src\test\java\com\multimodule\apitesting\stepDefinitions\testSteps\products\DeleteProduct.java

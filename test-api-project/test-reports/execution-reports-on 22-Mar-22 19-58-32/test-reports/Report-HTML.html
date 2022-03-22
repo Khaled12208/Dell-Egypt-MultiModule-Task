@@ -1,0 +1,3126 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title></title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+        <a href="#!" class="brand-logo black"><img src="http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'></span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Mar 22, 2022 07:58:32 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@DeleteProduct</a></li>
+					<li><a href='#'>@Regression</a></li>
+					<li><a href='#'>@GetAllProducts</a></li>
+					<li><a href='#'>@AddCategory</a></li>
+					<li><a href='#'>@DeleteCategory</a></li>
+					<li><a href='#'>@UpdateProduct</a></li>
+					<li><a href='#'>@HappyScenario</a></li>
+					<li><a href='#'>@UpdateCategoryByID</a></li>
+					<li><a href='#'>@NegativeScenarios</a></li>
+					<li><a href='#'>@GetAllCategories</a></li>
+					<li><a href='#'>@GetCategoryByID</a></li>
+					<li><a href='#'>@AddProduct</a></li>
+					<li><a href='#'>@GetProductByID</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Features</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$60%'>
+                    <span class='strong'>6</span> features passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='40%'>
+                    4</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Scenarios</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='77%'>
+                    <span class='strong'>21</span> scenarios passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='22%'>
+                    6</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='92%'>
+                    <span class='strong'>104</span> steps passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
+                    6</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='1%'>
+                    2</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>User Wants to add a new product</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='2' status='Fail'>
+
+	<span class='duration right label'>00 00 09.365</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: User try to add the product with valid data</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@AddProduct</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='86' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_wants_to_add_a_product_using_post(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to add a product using post "/products"</div>
+
+
+		</li>
+		<li test-id='110' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_data_contentType(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new product body Content type is "application/json"</div>
+
+
+		</li>
+		<li test-id='119' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_send_a_post_request_to_update_with(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a post request to update with "scenarios/addnewproduct/valid-fullbody-request.json"</div>
+
+
+		</li>
+		<li test-id='164' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_statuscode_is(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new product response status code is "201"</div>
+
+
+		</li>
+		<li test-id='165' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_header_contains(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new product response header contains "ETag" header</div>
+
+
+		</li>
+		<li test-id='166' class='node and Fail' status='Fail'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_is_empty())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And new product response body  should be is empty</div>
+
+
+					<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_is_empty(PostNewProduct.java:52)
+	at ?.new product response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/products/PostNewProduct.feature:12)
+</textarea>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='17' status='Pass'>
+
+	<span class='duration right label'>00 00 06.919</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User try to add the product with invalid data request body and valid content type</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>requestBody</td></tr><tr><td>scenarios/addnewproduct/invalid-body-missing-mandatoryfilds-request.json</td></tr><tr><td>scenarios/addnewproduct/invalid-body-price-string-request.json</td></tr></table><br><br><table class='markup-table table '><tr><td>requestBody</td></tr><tr><td>scenarios/addnewproduct/invalid-body-missing-mandatoryfilds-request.json</td></tr><tr><td>scenarios/addnewproduct/invalid-body-price-string-request.json</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@NegativeScenarios</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='18' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to add the product with invalid data request body and valid content type</div>
+
+				<div class='category-list'>
+						<span class='category label'>@AddProduct</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='111' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_wants_to_add_a_product_using_post(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to add a product using post "/products"</h6>
+
+				</li>
+				<li test-id='112' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_data_contentType(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new product body Content type is "application/json"</h6>
+
+				</li>
+				<li test-id='123' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_send_a_post_request_to_update_with(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a post request to update with "scenarios/addnewproduct/invalid-body-price-string-request.json"</h6>
+
+				</li>
+				<li test-id='126' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_statuscode_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new product response status code is "400"</h6>
+
+				</li>
+				<li test-id='129' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_should_match(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new product response body should match "scenarios/addnewproduct/error-response.json"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='69' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to add the product with invalid data request body and valid content type</div>
+
+				<div class='category-list'>
+						<span class='category label'>@AddProduct</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='87' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_wants_to_add_a_product_using_post(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to add a product using post "/products"</h6>
+
+				</li>
+				<li test-id='109' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_data_contentType(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new product body Content type is "application/json"</h6>
+
+				</li>
+				<li test-id='122' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_send_a_post_request_to_update_with(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a post request to update with "scenarios/addnewproduct/invalid-body-missing-mandatoryfilds-request.json"</h6>
+
+				</li>
+				<li test-id='130' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_statuscode_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new product response status code is "400"</h6>
+
+				</li>
+				<li test-id='131' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_should_match(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new product response body should match "scenarios/addnewproduct/error-response.json"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='41' status='Pass'>
+
+	<span class='duration right label'>00 00 06.858</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User try to add the product with valid data and invalid content type</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@AddProduct</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@NegativeScenarios</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='104' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_wants_to_add_a_product_using_post(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to add a product using post "/products"</div>
+
+
+		</li>
+		<li test-id='106' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_data_contentType(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new product body Content type is "text/plain"</div>
+
+
+		</li>
+		<li test-id='118' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_send_a_post_request_to_update_with(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a post request to update with "scenarios/addnewproduct/valid-fullbody-request.json"</div>
+
+
+		</li>
+		<li test-id='132' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_statuscode_is(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new product response status code is "400"</div>
+
+
+		</li>
+		<li test-id='133' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_should_match(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new product response body should match "scenarios/addnewproduct/error-response.json"</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Get One Product by ID</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='5' status='Pass'>
+
+	<span class='duration right label'>00 00 08.157</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User try to get product with invalid</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>id</td><td>record</td></tr><tr><td>-1</td><td>No record found for id '-1'</td></tr><tr><td>0</td><td>No record found for id '0'</td></tr><tr><td>0S</td><td>No record found for id '0S'</td></tr><tr><td>AS</td><td>No record found for id 'AS'</td></tr></table><br><br><table class='markup-table table '><tr><td>id</td><td>record</td></tr><tr><td>-1</td><td>No record found for id '-1'</td></tr><tr><td>0</td><td>No record found for id '0'</td></tr><tr><td>0S</td><td>No record found for id '0S'</td></tr><tr><td>AS</td><td>No record found for id 'AS'</td></tr></table><br><br><table class='markup-table table '><tr><td>id</td><td>record</td></tr><tr><td>-1</td><td>No record found for id '-1'</td></tr><tr><td>0</td><td>No record found for id '0'</td></tr><tr><td>0S</td><td>No record found for id '0S'</td></tr><tr><td>AS</td><td>No record found for id 'AS'</td></tr></table><br><br><table class='markup-table table '><tr><td>id</td><td>record</td></tr><tr><td>-1</td><td>No record found for id '-1'</td></tr><tr><td>0</td><td>No record found for id '0'</td></tr><tr><td>0S</td><td>No record found for id '0S'</td></tr><tr><td>AS</td><td>No record found for id 'AS'</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@GetProductByID</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@NegativeScenarios</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='6' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get product with invalid</div>
+
+				<div class='category-list'>
+						<span class='category label'>@GetProductByID</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='92' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalid(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get "/products/{id}" with invalid "0S"</h6>
+
+				</li>
+				<li test-id='146' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseCode(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Negative status code is "404"</h6>
+
+				</li>
+				<li test-id='147' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseBody(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And there is no "No record found for id '0S'" found for this id</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='20' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get product with invalid</div>
+
+				<div class='category-list'>
+						<span class='category label'>@GetProductByID</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='73' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalid(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get "/products/{id}" with invalid "AS"</h6>
+
+				</li>
+				<li test-id='140' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseCode(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Negative status code is "404"</h6>
+
+				</li>
+				<li test-id='141' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseBody(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And there is no "No record found for id 'AS'" found for this id</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='36' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get product with invalid</div>
+
+				<div class='category-list'>
+						<span class='category label'>@GetProductByID</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='97' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalid(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get "/products/{id}" with invalid "0"</h6>
+
+				</li>
+				<li test-id='148' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseCode(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Negative status code is "404"</h6>
+
+				</li>
+				<li test-id='149' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseBody(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And there is no "No record found for id '0'" found for this id</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='47' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get product with invalid</div>
+
+				<div class='category-list'>
+						<span class='category label'>@GetProductByID</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='75' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalid(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get "/products/{id}" with invalid "-1"</h6>
+
+				</li>
+				<li test-id='142' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseCode(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Negative status code is "404"</h6>
+
+				</li>
+				<li test-id='143' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseBody(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And there is no "No record found for id '-1'" found for this id</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='59' status='Pass'>
+
+	<span class='duration right label'>00 00 08.092</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User try to get a product with valid product id</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>id</td><td>response</td></tr><tr><td>185230</td><td>scenarios/getproductbyid/response-body_Id_185230.json</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@HappyScenario</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='60' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get a product with valid product id</div>
+
+				<div class='category-list'>
+						<span class='category label'>@GetProductByID</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='105' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetWithValid(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get "/products/{id}" with valid "185230"</h6>
+
+				</li>
+				<li test-id='152' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.theResponseCode(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Positive status code is "200"</h6>
+
+				</li>
+				<li test-id='153' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.theProductResponseBodyIs(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And get product response body is "scenarios/getproductbyid/response-body_Id_185230.json"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Get All Products</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='9' status='Pass'>
+
+	<span class='duration right label'>00 00 09.413</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: get all available product</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@GetAllProducts</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='100' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.GetAllProduct.userSendAGetRequestTo(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User send a get request to "/products"</div>
+
+
+		</li>
+		<li test-id='167' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.GetAllProduct.statusCodeIs(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then status code is "200"</div>
+
+
+		</li>
+		<li test-id='168' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.GetAllProduct.responseBodyMatchesInApiContract(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And response body matches "scenarios/getallproducts/response-body.json" in Api contract</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Delete a category using the category ID</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='12' status='Pass'>
+
+	<span class='duration right label'>00 00 10.755</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User will try to delete a product using a valid category ID</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@DeleteCategory</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='83' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.DeleteCategory.a_pre_created_category_with_data(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given A PRE-created category with data "scenarios/deletecategorybyid/valid-fullbody-request.json"</div>
+
+
+		</li>
+		<li test-id='160' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.DeleteCategory.user_sends_a_delete_category_request_to_where_id_is_the_value_of_category_id(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user sends a delete category request to "/categories/{id}" with ID "16" where id is the value of category ID</div>
+
+
+		</li>
+		<li test-id='184' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.DeleteCategory.deleted_category_status_code_is(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then deleted category status code is "200"</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Get All Categories</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='15' status='Pass'>
+
+	<span class='duration right label'>00 00 08.370</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: get all available Categories</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@GetAllCategories</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='103' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.GetAllCategories.user_send_a_get_categories_request_to(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User send a get Categories request to "/categories"</div>
+
+
+		</li>
+		<li test-id='156' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.GetAllCategories.categories_status_code_is(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Categories status code is "200"</div>
+
+
+		</li>
+		<li test-id='157' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.GetAllCategories.categories_response_body_matches_in_api_contract(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Categories response body matches "scenarios/getallcategories/response-body.json" in Api contract</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>Get Category by ID</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='23' status='Pass'>
+
+	<span class='duration right label'>00 00 08.198</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User try to get category with invalid category ID</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>id</td><td>record</td></tr><tr><td>-1</td><td>No record found for id '-1'</td></tr><tr><td>0</td><td>No record found for id '0'</td></tr><tr><td>0S</td><td>No record found for id '0S'</td></tr><tr><td>AS</td><td>No record found for id 'AS'</td></tr></table><br><br><table class='markup-table table '><tr><td>id</td><td>record</td></tr><tr><td>-1</td><td>No record found for id '-1'</td></tr><tr><td>0</td><td>No record found for id '0'</td></tr><tr><td>0S</td><td>No record found for id '0S'</td></tr><tr><td>AS</td><td>No record found for id 'AS'</td></tr></table><br><br><table class='markup-table table '><tr><td>id</td><td>record</td></tr><tr><td>-1</td><td>No record found for id '-1'</td></tr><tr><td>0</td><td>No record found for id '0'</td></tr><tr><td>0S</td><td>No record found for id '0S'</td></tr><tr><td>AS</td><td>No record found for id 'AS'</td></tr></table><br><br><table class='markup-table table '><tr><td>id</td><td>record</td></tr><tr><td>-1</td><td>No record found for id '-1'</td></tr><tr><td>0</td><td>No record found for id '0'</td></tr><tr><td>0S</td><td>No record found for id '0S'</td></tr><tr><td>AS</td><td>No record found for id 'AS'</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@NegativeScenarios</span>
+				<span class='category label'>@GetCategoryByID</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='24' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get category with invalid category ID</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+						<span class='category label'>@GetCategoryByID</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='93' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get category "/categories/{id}" with "0S"</h6>
+
+				</li>
+				<li test-id='150' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then category status code is "404"</h6>
+
+				</li>
+				<li test-id='151' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_error_response_body_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And there is no "No record found for id '0S'" found for this category id</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='26' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get category with invalid category ID</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+						<span class='category label'>@GetCategoryByID</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='82' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get category "/categories/{id}" with "0"</h6>
+
+				</li>
+				<li test-id='138' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then category status code is "404"</h6>
+
+				</li>
+				<li test-id='139' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_error_response_body_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And there is no "No record found for id '0'" found for this category id</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='53' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get category with invalid category ID</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+						<span class='category label'>@GetCategoryByID</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='74' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get category "/categories/{id}" with "-1"</h6>
+
+				</li>
+				<li test-id='144' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then category status code is "404"</h6>
+
+				</li>
+				<li test-id='145' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_error_response_body_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And there is no "No record found for id '-1'" found for this category id</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='62' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get category with invalid category ID</div>
+
+				<div class='category-list'>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+						<span class='category label'>@GetCategoryByID</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='85' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get category "/categories/{id}" with "AS"</h6>
+
+				</li>
+				<li test-id='136' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then category status code is "404"</h6>
+
+				</li>
+				<li test-id='137' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_error_response_body_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And there is no "No record found for id 'AS'" found for this category id</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='38' status='Pass'>
+
+	<span class='duration right label'>00 00 08.240</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User try to get a Category with valid Category id</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>id</td><td>response</td></tr><tr><td>abcat0101000</td><td>scenarios/getcategorybyid/response-body_Id_abcat0101000.json</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@HappyScenario</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='39' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to get a Category with valid Category id</div>
+
+				<div class='category-list'>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@GetCategoryByID</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='80' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user send a request to get category "/categories/{id}" with "abcat0101000"</h6>
+
+				</li>
+				<li test-id='154' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then category status code is "200"</h6>
+
+				</li>
+				<li test-id='155' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_response_body_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And get category response body is "scenarios/getcategorybyid/response-body_Id_abcat0101000.json"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>User Wants to update a product data</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='29' status='Fail'>
+
+	<span class='duration right label'>00 00 09.532</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: User try to update the product with valid data</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>id</td><td>requestBody</td><td>responseBody</td></tr><tr><td>312290</td><td>scenarios/updateproduct/UpdateProduct_AllFields-request.json</td><td>scenarios/updateproduct/UpdateProduct_AllFields-response.json</td></tr><tr><td>312290</td><td>scenarios/updateproduct/UpdateProduct_MandatoryFields-request.json</td><td>scenarios/updateproduct/UpdateProduct_MandatoryFields-response.json</td></tr></table><br><br><table class='markup-table table '><tr><td>id</td><td>requestBody</td><td>responseBody</td></tr><tr><td>312290</td><td>scenarios/updateproduct/UpdateProduct_AllFields-request.json</td><td>scenarios/updateproduct/UpdateProduct_AllFields-response.json</td></tr><tr><td>312290</td><td>scenarios/updateproduct/UpdateProduct_MandatoryFields-request.json</td><td>scenarios/updateproduct/UpdateProduct_MandatoryFields-response.json</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@UpdateProduct</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='30' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>User try to update the product with valid data</div>
+
+				<div class='category-list'>
+						<span class='category label'>@UpdateProduct</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='79' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_wants_to_update_a_product_with_id(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to update a product using patch "/products/{id}" with id "312290"</h6>
+
+				</li>
+				<li test-id='96' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.update_product_body_content_type_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And update product body content type is "application/json"</h6>
+
+				</li>
+				<li test-id='117' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_send_a_patch_request_to_update_with(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a patch request to update with "scenarios/updateproduct/UpdateProduct_AllFields-request.json"</h6>
+
+				</li>
+				<li test-id='171' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_StatusCode(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then update product response status code is "200"</h6>
+
+				</li>
+				<li test-id='172' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validHeaders_HeadersContains(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And update product response header contains "ETag" header</h6>
+
+				</li>
+				<li test-id='173' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And update product response body matches "scenarios/updateproduct/UpdateProduct_AllFields-response.json"</h6>
+
+							<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]
+    level: "warning"
+    schema: {"loadingURI":"#","pointer":""}
+    domain: "syntax"
+    ignored: ["image","manufacturer","model","name","price","shipping","upc","url"]
+error: instance type (object) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "object"
+    expected: ["string"]
+
+  Actual: {"id":312290,"name":"1","type":"Product Patched","price":1222,"upc":"string","shipping":2666,"description":"Product Patched","manufacturer":"Test product","model":"Product Patched","url":"Test product","image":"Test product","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2022-03-22T17:58:40.078Z"}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:99)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.bodySchema(Assertions.java:44)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(UpdateProductByID.java:56)
+	at ?.update product response body matches "scenarios/updateproduct/UpdateProduct_AllFields-response.json"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/products/UpdateProductByID.feature:12)
+</textarea>
+				</li>
+			</ul>
+		</li>
+		<li test-id='64' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>User try to update the product with valid data</div>
+
+				<div class='category-list'>
+						<span class='category label'>@UpdateProduct</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='78' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_wants_to_update_a_product_with_id(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to update a product using patch "/products/{id}" with id "312290"</h6>
+
+				</li>
+				<li test-id='99' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.update_product_body_content_type_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And update product body content type is "application/json"</h6>
+
+				</li>
+				<li test-id='113' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_send_a_patch_request_to_update_with(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a patch request to update with "scenarios/updateproduct/UpdateProduct_MandatoryFields-request.json"</h6>
+
+				</li>
+				<li test-id='176' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_StatusCode(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then update product response status code is "200"</h6>
+
+				</li>
+				<li test-id='177' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validHeaders_HeadersContains(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And update product response header contains "ETag" header</h6>
+
+				</li>
+				<li test-id='178' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And update product response body matches "scenarios/updateproduct/UpdateProduct_MandatoryFields-response.json"</h6>
+
+							<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]
+    level: "warning"
+    schema: {"loadingURI":"#","pointer":""}
+    domain: "syntax"
+    ignored: ["image","manufacturer","model","name","price","shipping","upc","url"]
+error: instance type (object) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "object"
+    expected: ["string"]
+
+  Actual: {"id":312290,"name":"1","type":"Product Patched","price":1222,"upc":"string","shipping":2666,"description":"Product Patched","manufacturer":"Test product","model":"Product Patched","url":"Test product","image":"Test product","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2022-03-22T17:58:40.078Z"}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:99)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.bodySchema(Assertions.java:44)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(UpdateProductByID.java:56)
+	at ?.update product response body matches "scenarios/updateproduct/UpdateProduct_MandatoryFields-response.json"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/products/UpdateProductByID.feature:12)
+</textarea>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='55' status='Fail'>
+
+	<span class='duration right label'>00 00 09.413</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: User try to update the product with invalid data Missing product mandatory items</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@UpdateProduct</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@NegativeScenarios</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='98' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_wants_to_update_a_product_with_id(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to update a product using patch "/products/{id}" with id "312290"</div>
+
+
+		</li>
+		<li test-id='107' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_send_a_patch_request_to_update_with(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a patch request to update with "scenarios/updateproduct/UpdateProduct_MissingName-request.json"</div>
+
+
+		</li>
+		<li test-id='174' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_StatusCode(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then update product response status code is "400"</div>
+
+
+					<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor322.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.statusCode(Assertions.java:52)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_StatusCode(UpdateProductByID.java:44)
+	at ?.update product response status code is "400"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/products/UpdateProductByID.feature:24)
+</textarea>
+		</li>
+		<li test-id='175' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And update product response body matches "scenarios/updateproduct/UpdateProduct-Error-response.json"</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>update a category data</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='33' status='Pass'>
+
+	<span class='duration right label'>00 00 09.542</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User try to update the category with valid data</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>id</td><td>requestBody</td><td>responseBody</td></tr><tr><td>abcat0010000</td><td>scenarios/updatecategory/UpdateCategory_AllFields-request.json</td><td>scenarios/updatecategory/UpdateCategory_AllFields-response.json</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@UpdateCategoryByID</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='34' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to update the category with valid data</div>
+
+				<div class='category-list'>
+						<span class='category label'>@UpdateCategoryByID</span>
+						<span class='category label'>@HappyScenario</span>
+						<span class='category label'>@Regression</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='90' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.user_wants_to_update_a_category_using_patch_with_id(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to update a category using patch "/categories/{id}" with id "abcat0010000"</h6>
+
+				</li>
+				<li test-id='91' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_body_content_type_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And update category body content type is "application/json"</h6>
+
+				</li>
+				<li test-id='116' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.user_send_a_patch_request_to_update_category_with(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a patch request to update category with "scenarios/updatecategory/UpdateCategory_AllFields-request.json"</h6>
+
+				</li>
+				<li test-id='179' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then update category response status code is "200"</h6>
+
+				</li>
+				<li test-id='180' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_header_contains_header(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And update category response header contains "ETag" header</h6>
+
+				</li>
+				<li test-id='181' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_body_matches(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And update category response body matches "scenarios/updatecategory/UpdateCategory_AllFields-response.json"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='71' status='Fail'>
+
+	<span class='duration right label'>00 00 09.259</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: User try to update the category with invalid data Missing product mandatory items</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@UpdateCategoryByID</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@NegativeScenarios</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='94' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.user_wants_to_update_a_category_using_patch_with_id(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to update a category using patch "/categories/{id}" with id "abcat0010000"</div>
+
+
+		</li>
+		<li test-id='108' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.user_send_a_patch_request_to_update_category_with(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a patch request to update category with "scenarios/updatecategory/UpdateCategory_MissingName-request.json"</div>
+
+
+		</li>
+		<li test-id='169' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_status_code_is(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then update category response status code is "400"</div>
+
+
+					<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor322.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.statusCode(Assertions.java:52)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_status_code_is(UpdateCategoryByID.java:41)
+	at ?.update category response status code is "400"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/UpdateCategoryByID.feature:22)
+</textarea>
+		</li>
+		<li test-id='170' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_body_matches(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And update category response body matches "scenarios/updatecategory/UpdateCategory-Error-response.json"</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>User Wants to add a new category</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='44' status='Pass'>
+
+	<span class='duration right label'>00 00 06.849</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: User try to add category with invalid data request body parameters and valid content type</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>requestBody</td><td>statusCode</td><td>responseBody</td></tr><tr><td>scenarios/addnewcategory/invalid-body-id-int-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-id-int-response.json</td></tr><tr><td>scenarios/addnewcategory/invalid-body-missing-name-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-missing-name-response.json</td></tr><tr><td>scenarios/addnewcategory/invalid-body-missing-id-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-missing-id-response.json</td></tr></table><br><br><table class='markup-table table '><tr><td>requestBody</td><td>statusCode</td><td>responseBody</td></tr><tr><td>scenarios/addnewcategory/invalid-body-id-int-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-id-int-response.json</td></tr><tr><td>scenarios/addnewcategory/invalid-body-missing-name-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-missing-name-response.json</td></tr><tr><td>scenarios/addnewcategory/invalid-body-missing-id-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-missing-id-response.json</td></tr></table><br><br><table class='markup-table table '><tr><td>requestBody</td><td>statusCode</td><td>responseBody</td></tr><tr><td>scenarios/addnewcategory/invalid-body-id-int-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-id-int-response.json</td></tr><tr><td>scenarios/addnewcategory/invalid-body-missing-name-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-missing-name-response.json</td></tr><tr><td>scenarios/addnewcategory/invalid-body-missing-id-request.json</td><td>400</td><td>scenarios/addnewcategory/invalid-body-missing-id-response.json</td></tr></table></div>
+	
+		<div class='category-list'>
+				<span class='category label'>@AddCategory</span>
+				<span class='category label'>@Regression</span>
+				<span class='category label'>@NegativeScenarios</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='45' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to add category with invalid data request body parameters and valid content type</div>
+
+				<div class='category-list'>
+						<span class='category label'>@AddCategory</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='81' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_wants_to_add_a_category_using_post(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to add a category using post "/products"</h6>
+
+				</li>
+				<li test-id='84' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_body_content_type_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new category body Content type is "application/json"</h6>
+
+				</li>
+				<li test-id='114' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_send_a_post_request_to_add_category_with(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a post request to add category with "scenarios/addnewcategory/invalid-body-missing-name-request.json"</h6>
+
+				</li>
+				<li test-id='124' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new category response status code is "400"</h6>
+
+				</li>
+				<li test-id='125' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_match(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new category response body should match "scenarios/addnewcategory/invalid-body-missing-name-response.json"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='49' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to add category with invalid data request body parameters and valid content type</div>
+
+				<div class='category-list'>
+						<span class='category label'>@AddCategory</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='76' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_wants_to_add_a_category_using_post(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to add a category using post "/products"</h6>
+
+				</li>
+				<li test-id='77' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_body_content_type_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new category body Content type is "application/json"</h6>
+
+				</li>
+				<li test-id='115' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_send_a_post_request_to_add_category_with(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a post request to add category with "scenarios/addnewcategory/invalid-body-missing-id-request.json"</h6>
+
+				</li>
+				<li test-id='134' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new category response status code is "400"</h6>
+
+				</li>
+				<li test-id='135' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_match(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new category response body should match "scenarios/addnewcategory/invalid-body-missing-id-response.json"</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='57' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>User try to add category with invalid data request body parameters and valid content type</div>
+
+				<div class='category-list'>
+						<span class='category label'>@AddCategory</span>
+						<span class='category label'>@Regression</span>
+						<span class='category label'>@NegativeScenarios</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='101' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_wants_to_add_a_category_using_post(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to add a category using post "/products"</h6>
+
+				</li>
+				<li test-id='102' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_body_content_type_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new category body Content type is "application/json"</h6>
+
+				</li>
+				<li test-id='120' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_send_a_post_request_to_add_category_with(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a post request to add category with "scenarios/addnewcategory/invalid-body-id-int-request.json"</h6>
+
+				</li>
+				<li test-id='127' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_status_code_is(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new category response status code is "400"</h6>
+
+				</li>
+				<li test-id='128' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_match(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new category response body should match "scenarios/addnewcategory/invalid-body-id-int-response.json"</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='51' status='Fail'>
+
+	<span class='duration right label'>00 00 08.930</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: User try to add the category with valid data</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@AddCategory</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='88' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_wants_to_add_a_category_using_post(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given user wants to add a category using post "/categories"</div>
+
+
+		</li>
+		<li test-id='89' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_body_content_type_is(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new category body Content type is "application/json"</div>
+
+
+		</li>
+		<li test-id='121' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_send_a_post_request_to_set_new_category_with_unique_id_and_name(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User send a post request to set new category with unique ID and name "category"</div>
+
+
+		</li>
+		<li test-id='161' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_status_code_is(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new category response status code is "201"</div>
+
+
+		</li>
+		<li test-id='162' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_header_contains_header(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And new category response header contains "ETag" header</div>
+
+
+		</li>
+		<li test-id='163' class='node and Fail' status='Fail'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And new category response body  should be is empty</div>
+
+
+					<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty(PostNewCategory.java:58)
+	at ?.new category response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/PostNewCategory.feature:12)
+</textarea>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='66'>
+					<div class='test-heading'>
+						<span class='test-name'>Delete a product using the product ID</span>
+						<span class='test-time'>Mar 22, 2022 07:58:34 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='67' status='Pass'>
+
+	<span class='duration right label'>00 00 10.678</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: User will try to delete a product using a valid product ID</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@DeleteProduct</span>
+				<span class='category label'>@HappyScenario</span>
+				<span class='category label'>@Regression</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='95' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.a_pre_created_product_with_data(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given A PRE-created product with data "scenarios/deleteproductbyid/valid-fullbody-request.json"</div>
+
+
+		</li>
+		<li test-id='158' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.the_user_wants_to_delete_this_product_using_the_id())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The user wants to delete this product using the ID</div>
+
+
+		</li>
+		<li test-id='159' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.user_sends_a_delete_request_to_where_id_is_the_value_of_product_id(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When user sends a delete request to "/products/{id}" where id is the value of product ID</div>
+
+
+		</li>
+		<li test-id='182' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.deleted_product_status_code_is(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then deleted product status code is "200"</div>
+
+
+		</li>
+		<li test-id='183' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.if_the_user_try_it_to_get_this_product(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And if the user try it to get this product the status code is "404"</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DeleteProduct</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='67'>User will try to delete a product using a valid product ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Regression</span>
+						<span class='category-status right'>
+						<span class='label pass'>25</span>
+						<span class='label fail'>7</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 25</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 7</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='2'>User try to add the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='5'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='6'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='9'>get all available product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='12'>User will try to delete a product using a valid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='15'>get all available Categories</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='18'>User try to add the product with invalid data request body and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='20'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='23'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='24'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='26'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='29'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='30'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='33'>User try to update the category with valid data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='34'>User try to update the category with valid data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='36'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='39'>User try to get a Category with valid Category id</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='41'>User try to add the product with valid data and invalid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='44'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='45'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='47'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='49'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='51'>User try to add the category with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='53'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='55'>User try to update the product with invalid data Missing product mandatory items</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='57'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='60'>User try to get a product with valid product id</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='62'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='64'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='67'>User will try to delete a product using a valid product ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='69'>User try to add the product with invalid data request body and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='71'>User try to update the category with invalid data Missing product mandatory items</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@GetAllProducts</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='9'>get all available product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddCategory</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='44'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='45'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='49'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='51'>User try to add the category with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='57'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DeleteCategory</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='12'>User will try to delete a product using a valid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@UpdateProduct</span>
+						<span class='category-status right'>
+						<span class='label fail'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='29'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='30'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='55'>User try to update the product with invalid data Missing product mandatory items</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='64'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@HappyScenario</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						<span class='label fail'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 5</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='2'>User try to add the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='9'>get all available product</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='12'>User will try to delete a product using a valid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='15'>get all available Categories</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='29'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='30'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='33'>User try to update the category with valid data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='34'>User try to update the category with valid data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='38'>User try to get a Category with valid Category id</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='39'>User try to get a Category with valid Category id</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='51'>User try to add the category with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='59'>User try to get a product with valid product id</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='60'>User try to get a product with valid product id</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='64'>User try to update the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='67'>User will try to delete a product using a valid product ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@UpdateCategoryByID</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='33'>User try to update the category with valid data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='34'>User try to update the category with valid data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='71'>User try to update the category with invalid data Missing product mandatory items</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@NegativeScenarios</span>
+						<span class='category-status right'>
+						<span class='label pass'>18</span>
+						<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 18</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='5'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='6'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='17'>User try to add the product with invalid data request body and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='18'>User try to add the product with invalid data request body and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='20'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='23'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='24'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='26'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='36'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='41'>User try to add the product with valid data and invalid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='44'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='45'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='47'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='49'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='53'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='55'>User try to update the product with invalid data Missing product mandatory items</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='57'>User try to add category with invalid data request body parameters and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='62'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='69'>User try to add the product with invalid data request body and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='71'>User try to update the category with invalid data Missing product mandatory items</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@GetAllCategories</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='15'>get all available Categories</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@GetCategoryByID</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='23'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='24'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='26'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='39'>User try to get a Category with valid Category id</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='53'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='62'>User try to get category with invalid category ID</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AddProduct</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='2'>User try to add the product with valid data</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='18'>User try to add the product with invalid data request body and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='41'>User try to add the product with valid data and invalid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='69'>User try to add the product with invalid data request body and valid content type</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@GetProductByID</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='5'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='6'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='20'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='36'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='47'>User try to get product with invalid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:34 PM</td>
+										<td class='linked' test-id='60'>User try to get a product with valid product id</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 22, 2022 07:58:43 PM</td>
+										<td class='linked' test-id='163'>And new category response body  should be is empty</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty(PostNewCategory.java:58)
+	at ?.new category response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/PostNewCategory.feature:12)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:44 PM</td>
+										<td class='linked' test-id='166'>And new product response body  should be is empty</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty(PostNewCategory.java:58)
+	at ?.new category response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/PostNewCategory.feature:12)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:44 PM</td>
+										<td class='linked' test-id='169'>Then update category response status code is "400"</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty(PostNewCategory.java:58)
+	at ?.new category response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/PostNewCategory.feature:12)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:44 PM</td>
+										<td class='linked' test-id='173'>And update product response body matches "scenarios/updateproduct/UpdateProduct_AllFields-response.json"</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty(PostNewCategory.java:58)
+	at ?.new category response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/PostNewCategory.feature:12)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:44 PM</td>
+										<td class='linked' test-id='174'>Then update product response status code is "400"</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty(PostNewCategory.java:58)
+	at ?.new category response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/PostNewCategory.feature:12)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 22, 2022 07:58:44 PM</td>
+										<td class='linked' test-id='178'>And update product response body matches "scenarios/updateproduct/UpdateProduct_MandatoryFields-response.json"</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$35.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor295.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$2.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty(PostNewCategory.java:58)
+	at ?.new category response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/PostNewCategory.feature:12)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>10</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>27</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>112</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Mar 22, 2022 07:58:32 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Mar 22, 2022 07:58:45 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>00 00 13.468</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Skipped</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@DeleteProduct</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Regression</td>
+							<td>25</td>
+							<td>7</td>
+							<td>0</td>
+							<td>
+									78.125%
+							</td>
+						</tr>
+						<tr>
+							<td>@GetAllProducts</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AddCategory</td>
+							<td>4</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									80%
+							</td>
+						</tr>
+						<tr>
+							<td>@DeleteCategory</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@UpdateProduct</td>
+							<td>0</td>
+							<td>4</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@HappyScenario</td>
+							<td>10</td>
+							<td>5</td>
+							<td>0</td>
+							<td>
+									66.667%
+							</td>
+						</tr>
+						<tr>
+							<td>@UpdateCategoryByID</td>
+							<td>2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									66.667%
+							</td>
+						</tr>
+						<tr>
+							<td>@NegativeScenarios</td>
+							<td>18</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									90%
+							</td>
+						</tr>
+						<tr>
+							<td>@GetAllCategories</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@GetCategoryByID</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AddProduct</td>
+							<td>3</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									75%
+							</td>
+						</tr>
+						<tr>
+							<td>@GetProductByID</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 10,
+				passParent: 6,
+				failParent: 4,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				childCount: 27,
+				passChild: 21,
+				failChild: 6,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				grandChildCount: 112,
+				passGrandChild: 104,
+				failGrandChild: 6,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 2,
+				infoGrandChild: 0,
+			};
+			</script>
+		
+		<script>
+			var timeline = {
+			        "User Wants to add a new product":9.369,"Get One Product by ID":8.27,"Get All Products":9.413,"Delete a category using the category ID":10.756,"Get All Categories":8.37,"Get Category by ID":8.278,"User Wants to update a product data":9.532,"update a category data":9.542,"User Wants to add a new category":8.957,"Delete a product using the product ID":10.683
+			};
+		</script>
+		
+		  <script src='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		
+		<script type='text/javascript'>
+				
+		</script> 
+
+	</body>
+</html>

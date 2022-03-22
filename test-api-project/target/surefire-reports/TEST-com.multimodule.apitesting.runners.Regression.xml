@@ -1,0 +1,3161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.multimodule.apitesting.runners.Regression" time="28.068" tests="27" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\target\test-classes;C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\target\classes;C:\Users\Khaled M Farh\Downloads\test-multi-module-project\common-helpers\target\common-helpers-1.0-SNAPSHOT.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Khaled M Farh\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Khaled M Farh\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\json-schema-validator\4.5.1\json-schema-validator-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Khaled M Farh\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Khaled M Farh\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Khaled M Farh\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Khaled M Farh\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi-ooxml\5.2.1\poi-ooxml-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.1\poi-ooxml-lite-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Khaled M Farh\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi\5.2.1\poi-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Khaled M Farh\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Khaled M Farh\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\slf4j-simple\1.7.32\slf4j-simple-1.7.32.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-core\6.8.1\cucumber-core-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-gherkin\6.8.1\cucumber-gherkin-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.8.1\cucumber-gherkin-messages-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\messages\13.1.0\messages-13.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-plugin\6.8.1\cucumber-plugin-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\docstring\6.8.1\docstring-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\create-meta\2.0.2\create-meta-2.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-testng\6.8.1\cucumber-testng-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Khaled M Farh\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Khaled M Farh\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-java\6.8.1\cucumber-java-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-picocontainer\6.8.1\cucumber-picocontainer-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Khaled M Farh\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.10.0\extentreports-cucumber6-adapter-2.10.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\extent-pdf-report\2.1.0\extent-pdf-report-2.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.5.0\cucumber-pdf-report-2.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\pdfbox\pdfbox\2.0.25\pdfbox-2.0.25.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\pdfbox\fontbox\2.0.25\fontbox-2.0.25.jar;C:\Users\Khaled M Farh\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\Khaled M Farh\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\Khaled M Farh\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Khaled M Farh\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\table-layout\1.4.0\table-layout-1.4.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.1.0\rest-assured-cucumber-pdf-report-1.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.0\htmlextentreporter-1.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Khaled M Farh\AppData\Local\Temp\surefire16741532495161971037\surefirebooter11676322442664402959.jar C:\Users\Khaled M Farh\AppData\Local\Temp\surefire16741532495161971037 2022-03-22T20-03-05_275-jvmRun1 surefire3029532617328060793tmp surefire_07891541669992418219tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\target\test-classes;C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project\target\classes;C:\Users\Khaled M Farh\Downloads\test-multi-module-project\common-helpers\target\common-helpers-1.0-SNAPSHOT.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Khaled M Farh\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Khaled M Farh\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Khaled M Farh\.m2\repository\io\rest-assured\json-schema-validator\4.5.1\json-schema-validator-4.5.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Khaled M Farh\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Khaled M Farh\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Khaled M Farh\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Khaled M Farh\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi-ooxml\5.2.1\poi-ooxml-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.1\poi-ooxml-lite-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.3\xmlbeans-5.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Khaled M Farh\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\poi\poi\5.2.1\poi-5.2.1.jar;C:\Users\Khaled M Farh\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Khaled M Farh\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Khaled M Farh\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Khaled M Farh\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\Khaled M Farh\.m2\repository\org\slf4j\slf4j-simple\1.7.32\slf4j-simple-1.7.32.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-core\6.8.1\cucumber-core-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-gherkin\6.8.1\cucumber-gherkin-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.8.1\cucumber-gherkin-messages-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\messages\13.1.0\messages-13.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-plugin\6.8.1\cucumber-plugin-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\docstring\6.8.1\docstring-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\create-meta\2.0.2\create-meta-2.0.2.jar;C:\Users\Khaled M Farh\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-testng\6.8.1\cucumber-testng-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\testng\testng\7.3.0\testng-7.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\ant\ant\1.10.3\ant-1.10.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\ant\ant-launcher\1.10.3\ant-launcher-1.10.3.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\inject\guice\4.2.2\guice-4.2.2-no_aop.jar;C:\Users\Khaled M Farh\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Khaled M Farh\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-java\6.8.1\cucumber-java-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\io\cucumber\cucumber-picocontainer\6.8.1\cucumber-picocontainer-6.8.1.jar;C:\Users\Khaled M Farh\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Khaled M Farh\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Khaled M Farh\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Khaled M Farh\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Khaled M Farh\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\extentreports-cucumber6-adapter\2.10.0\extentreports-cucumber6-adapter-2.10.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\extent-pdf-report\2.1.0\extent-pdf-report-2.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.5.0\cucumber-pdf-report-2.5.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\pdfbox\pdfbox\2.0.25\pdfbox-2.0.25.jar;C:\Users\Khaled M Farh\.m2\repository\org\apache\pdfbox\fontbox\2.0.25\fontbox-2.0.25.jar;C:\Users\Khaled M Farh\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\Khaled M Farh\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\Khaled M Farh\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Khaled M Farh\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\table-layout\1.4.0\table-layout-1.4.0.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.1.0\rest-assured-cucumber-pdf-report-1.1.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Khaled M Farh\.m2\repository\com\aventstack\klov-reporter\5.0.9\klov-reporter-5.0.9.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\Khaled M Farh\.m2\repository\tech\grasshopper\htmlextentreporter\1.0.0\htmlextentreporter-1.0.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Khaled M Farh\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Khaled M Farh"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Khaled M Farh\AppData\Local\Temp\surefire16741532495161971037\surefirebooter11676322442664402959.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
+    <property name="user.name" value="Khaled M Farh"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Khaled M Farh\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\KHALED~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.2.3"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="user.dir" value="C:\Users\Khaled M Farh\Downloads\test-multi-module-project\test-api-project"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.1\bin;C:\Program Files\PuTTY\;C:\Users\Khaled M Farh\AppData\Local\Android\Sdk;C:\Users\Khaled M Farh\AppData\Local\Android\Sdk\platform-tools;C:\minikube;C:\Program Files\Java\jdk-17.0.1;C:\Users\Khaled M Farh\apache-maven-3.8.4\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Khaled M Farh\AppData\Local\Microsoft\WindowsApps;C:\Users\Khaled M Farh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Khaled M Farh\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Users\Khaled M Farh\AppData\Local\Android\Sdk\platform-tools;C:\Users\Khaled M Farh\AppData\Local\Android\Sdk;C:\Program Files\Java\jdk-17.0.1\bin;C:\Program Files\Java\jdk-17.0.1;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;User try to add category with invalid data request body parameters and valid content type&quot;, &quot;Optional[User Wants to add a new category]&quot;](2)" classname="com.multimodule.apitesting.runners.Regression" time="8.673">
+    <system-out><![CDATA[
+@Regression @UpdateCategoryByID @NegativeScenarios
+Scenario: User try to update the category with invalid data Missing product mandatory items                                 # src/test/resources/featuers/categories/UpdateCategoryByID.feature:19
+
+@Regression @GetProductByID @HappyScenario
+Scenario Outline: User try to get a product with valid product id                          # src/test/resources/featuers/products/GetProductByID.feature:13
+
+@Regression @GetCategoryByID @NegativeScenarios
+Scenario Outline: User try to get category with invalid category ID        # src/test/resources/featuers/categories/GetCategoryByID.feature:27
+
+@Regression @AddCategory @NegativeScenarios
+Scenario Outline: User try to add category with invalid data request body parameters and valid content type          # src/test/resources/featuers/categories/PostNewCategory.feature:28
+
+@Regression @UpdateProduct @HappyScenario
+Scenario Outline: User try to update the product with valid data                                               # src/test/resources/featuers/products/UpdateProductByID.feature:16
+
+@Regression @AddProduct @NegativeScenarios
+Scenario Outline: User try to add the product with invalid data request body and valid content type                       # src/test/resources/featuers/products/PostNewProduct.feature:33
+
+@Regression @AddCategory @NegativeScenarios
+Scenario Outline: User try to add category with invalid data request body parameters and valid content type            # src/test/resources/featuers/categories/PostNewCategory.feature:26
+
+@Regression @AddProduct @NegativeScenarios
+Scenario: User try to add the product with valid data and invalid content type                       # src/test/resources/featuers/products/PostNewProduct.feature:15
+
+@Regression @GetCategoryByID @NegativeScenarios
+Scenario Outline: User try to get category with invalid category ID       # src/test/resources/featuers/categories/GetCategoryByID.feature:25
+
+@Regression @GetProductByID @NegativeScenarios
+Scenario Outline: User try to get product with invalid                # src/test/resources/featuers/products/GetProductByID.feature:27
+
+@Regression @AddCategory @HappyScenario
+Scenario: User try to add the category with valid data                                 # src/test/resources/featuers/categories/PostNewCategory.feature:6
+
+@Regression @GetProductByID @NegativeScenarios
+Scenario Outline: User try to get product with invalid                # src/test/resources/featuers/products/GetProductByID.feature:29
+
+@Regression @GetAllCategories @HappyScenario
+Scenario: get all available Categories                                                                 # src/test/resources/featuers/categories/GetAllCategories.feature:6
+
+@Regression @UpdateProduct @HappyScenario
+Scenario Outline: User try to update the product with valid data                                                     # src/test/resources/featuers/products/UpdateProductByID.feature:18
+
+@Regression @DeleteProduct @HappyScenario
+Scenario: User will try to delete a product using a valid product ID                              # src/test/resources/featuers/products/DeleteProduct.feature:6
+
+@Regression @AddProduct @NegativeScenarios
+Scenario Outline: User try to add the product with invalid data request body and valid content type             # src/test/resources/featuers/products/PostNewProduct.feature:35
+
+@Regression @GetProductByID @NegativeScenarios
+Scenario Outline: User try to get product with invalid                # src/test/resources/featuers/products/GetProductByID.feature:23
+
+@Regression @GetCategoryByID @NegativeScenarios
+Scenario Outline: User try to get category with invalid category ID        # src/test/resources/featuers/categories/GetCategoryByID.feature:29
+
+@Regression @GetAllProducts @HappyScenario
+Scenario: get all available product                                                       # src/test/resources/featuers/products/GetAllProduct.feature:6
+
+@Regression @DeleteCategory @HappyScenario
+Scenario: User will try to delete a product using a valid category ID                                               # src/test/resources/featuers/categories/DeleteCategory.feature:6
+
+@Regression @GetProductByID @NegativeScenarios
+Scenario Outline: User try to get product with invalid               # src/test/resources/featuers/products/GetProductByID.feature:25
+
+@Regression @UpdateProduct @NegativeScenarios
+Scenario: User try to update the product with invalid data Missing product mandatory items                       # src/test/resources/featuers/products/UpdateProductByID.feature:21
+
+@Regression @UpdateCategoryByID @HappyScenario
+Scenario Outline: User try to update the category with valid data                                                         # src/test/resources/featuers/categories/UpdateCategoryByID.feature:16
+
+@Regression @GetCategoryByID @HappyScenario
+Scenario Outline: User try to get a Category with valid Category id                                # src/test/resources/featuers/categories/GetCategoryByID.feature:13
+
+@Regression @AddCategory @NegativeScenarios
+Scenario Outline: User try to add category with invalid data request body parameters and valid content type      # src/test/resources/featuers/categories/PostNewCategory.feature:24
+
+@Regression @GetCategoryByID @NegativeScenarios
+Scenario Outline: User try to get category with invalid category ID        # src/test/resources/featuers/categories/GetCategoryByID.feature:23
+
+@Regression @AddProduct @HappyScenario
+Scenario: User try to add the product with valid data                                                # src/test/resources/featuers/products/PostNewProduct.feature:6
+[DEBUG] 2022-03-22 20:03:15.612 TestNG-PoolService-25.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.618 TestNG-PoolService-19.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.615 TestNG-PoolService-7.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.618 TestNG-PoolService-5.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.618 TestNG-PoolService-23.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.615 TestNG-PoolService-24.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.618 TestNG-PoolService-11.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.621 TestNG-PoolService-22.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.615 TestNG-PoolService-26.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.615 TestNG-PoolService-2.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.621 TestNG-PoolService-20.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.613 TestNG-PoolService-16.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.622 TestNG-PoolService-1.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.624 TestNG-PoolService-0.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.625 TestNG-PoolService-18.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.627 TestNG-PoolService-12.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.632 TestNG-PoolService-17.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.633 TestNG-PoolService-9.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.634 TestNG-PoolService-15.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.634 TestNG-PoolService-8.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.634 TestNG-PoolService-4.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.634 TestNG-PoolService-10.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.634 TestNG-PoolService-3.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.638 TestNG-PoolService-6.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.642 TestNG-PoolService-14.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.643 TestNG-PoolService-13.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+[DEBUG] 2022-03-22 20:03:15.643 TestNG-PoolService-21.com.multimodule.apitesting.driver.RequestBuilder.setBaseURL.Line 57 - Base url is http://localhost:3030/
+  Given user wants to update a product using patch "/products/{id}" with id "312290"                                 # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_wants_to_update_a_product_with_id(java.lang.String,java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.657 TestNG-PoolService-25.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+[DEBUG] 2022-03-22 20:03:15.663 TestNG-PoolService-8.com.multimodule.apitesting.driver.RequestBuilder.setPathParm.Line 78 - request path is /products
+[DEBUG] 2022-03-22 20:03:15.664 TestNG-PoolService-9.com.multimodule.apitesting.driver.RequestBuilder.setPathParm.Line 78 - request path is /products
+[DEBUG] 2022-03-22 20:03:15.671 TestNG-PoolService-7.com.multimodule.apitesting.driver.RequestBuilder.setPathParm.Line 78 - request path is /categories
+  Given user wants to add a category using post "/categories"                          # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_wants_to_add_a_category_using_post(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.673 TestNG-PoolService-7.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+  Given user wants to update a category using patch "/categories/{id}" with id "abcat0010000"                               # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.user_wants_to_update_a_category_using_patch_with_id(java.lang.String,java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.719 TestNG-PoolService-23.com.multimodule.apitesting.driver.RequestBuilder.setPathParm.Line 78 - request path is /products
+  Given user wants to add a product using post "/products"                                                      # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_wants_to_add_a_product_using_post(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.720 TestNG-PoolService-23.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+[DEBUG] 2022-03-22 20:03:15.722 TestNG-PoolService-12.com.multimodule.apitesting.driver.RequestBuilder.setRequestBody.Line 101 - request body {
+  "name": "string"
+}
+[DEBUG] 2022-03-22 20:03:15.723 TestNG-PoolService-12.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 42 - Set content type : application/json
+[DEBUG] 2022-03-22 20:03:15.730 TestNG-PoolService-0.com.multimodule.apitesting.driver.RequestBuilder.setRequestBody.Line 101 - request body {
+  "name": "category",
+  "id": "16"
+}
+[DEBUG] 2022-03-22 20:03:15.730 TestNG-PoolService-0.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 42 - Set content type : application/json
+  Given user wants to update a product using patch "/products/{id}" with id "312290"                           # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_wants_to_update_a_product_with_id(java.lang.String,java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.731 TestNG-PoolService-24.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+  Given user wants to update a product using patch "/products/{id}" with id "312290"                             # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_wants_to_update_a_product_with_id(java.lang.String,java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.734 TestNG-PoolService-26.com.multimodule.apitesting.driver.RequestBuilder.setBody.Line 64 - request body is {
+  "type": "Product Patched",
+  "description": "Product Patched",
+  "model": "Product Patched"
+
+}
+[DEBUG] 2022-03-22 20:03:15.734 TestNG-PoolService-26.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 42 - Set content type : application/json
+[DEBUG] 2022-03-22 20:03:15.868 TestNG-PoolService-22.com.multimodule.apitesting.driver.RequestBuilder.setPathParm.Line 78 - request path is /products
+  Given user wants to add a product using post "/products"                                                                # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_wants_to_add_a_product_using_post(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.872 TestNG-PoolService-22.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+  Given user wants to add a category using post "/products"                                                            # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_wants_to_add_a_category_using_post(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.873 TestNG-PoolService-9.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+  Given user wants to add a category using post "/products"                                                      # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_wants_to_add_a_category_using_post(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.874 TestNG-PoolService-8.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+[DEBUG] 2022-03-22 20:03:15.876 TestNG-PoolService-21.com.multimodule.apitesting.driver.RequestBuilder.setPathParm.Line 78 - request path is /products
+  Given user wants to add a product using post "/products"                                           # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_wants_to_add_a_product_using_post(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.876 TestNG-PoolService-13.com.multimodule.apitesting.driver.RequestBuilder.setRequestBody.Line 101 - request body {
+  "name": "1254",
+  "type": "string",
+  "price": 0,
+  "shipping": 0,
+  "upc": "4455",
+  "description": "885",
+  "manufacturer": "7566",
+  "model": "2155",
+  "url": "string",
+  "image": "string"
+}
+[DEBUG] 2022-03-22 20:03:15.876 TestNG-PoolService-13.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 42 - Set content type : application/json
+[DEBUG] 2022-03-22 20:03:15.876 TestNG-PoolService-21.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : text/plain
+[DEBUG] 2022-03-22 20:03:15.877 TestNG-PoolService-10.com.multimodule.apitesting.driver.RequestBuilder.setPathParm.Line 78 - request path is /products
+  Given user wants to add a category using post "/products"                                                          # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_wants_to_add_a_category_using_post(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.879 TestNG-PoolService-20.com.multimodule.apitesting.driver.RequestBuilder.setPathParm.Line 78 - request path is /products
+  Given user wants to update a category using patch "/categories/{id}" with id "abcat0010000"                             # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.user_wants_to_update_a_category_using_patch_with_id(java.lang.String,java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.881 TestNG-PoolService-11.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+  Given user wants to add a product using post "/products"                                           # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_wants_to_add_a_product_using_post(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.882 TestNG-PoolService-20.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+[DEBUG] 2022-03-22 20:03:15.882 TestNG-PoolService-10.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 49 - Set content type : application/json
+  And new product body Content type is "text/plain"                                                  # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_data_contentType(java.lang.String)
+  And update product body content type is "application/json"                                                   # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.update_product_body_content_type_is(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.975 TestNG-PoolService-21.com.multimodule.apitesting.driver.RequestBuilder.setBody.Line 64 - request body is {
+  "name": "1254",
+  "type": "string",
+  "price": 0,
+  "shipping": 0,
+  "upc": "4455",
+  "description": "885",
+  "manufacturer": "7566",
+  "model": "2155",
+  "url": "string",
+  "image": "string"
+}
+[DEBUG] 2022-03-22 20:03:15.976 TestNG-PoolService-24.com.multimodule.apitesting.driver.RequestBuilder.setBody.Line 64 - request body is {
+  "name": "Tiger",
+  "type": "Book",
+  "price": 1222,
+  "shipping": 2666,
+  "upc": "www.com",
+  "description": "Test product",
+  "manufacturer": "Test product",
+  "model": "Test product",
+  "url": "Test product",
+  "image": "Test product"
+}
+[DEBUG] 2022-03-22 20:03:15.976 TestNG-PoolService-24.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 42 - Set content type : application/json
+  And new product body Content type is "application/json"                                                       # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_data_contentType(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.978 TestNG-PoolService-23.com.multimodule.apitesting.driver.RequestBuilder.setBody.Line 64 - request body is {
+  "name": "string",
+  "type": "string",
+  "price": "0",
+  "shipping": 0,
+  "upc": "string",
+  "description": "string",
+  "manufacturer": "string",
+  "model": "string",
+  "url": "string",
+  "image": "string"
+}
+  And new product body Content type is "application/json"                                                                 # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_data_contentType(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.980 TestNG-PoolService-22.com.multimodule.apitesting.driver.RequestBuilder.setBody.Line 64 - request body is {
+  "type": "string",
+  "price": 0,
+  "shipping": 0,
+  "upc": "string",
+  "description": "string",
+  "manufacturer": "string",
+  "model": "string",
+  "url": "string",
+  "image": "string"
+}
+  And new category body Content type is "application/json"                                                           # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_body_content_type_is(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.982 TestNG-PoolService-10.com.multimodule.apitesting.driver.RequestBuilder.setRequestBody.Line 101 - request body {
+  "name": "Cat1"
+}
+  And update category body content type is "application/json"                                                             # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_body_content_type_is(java.lang.String)
+  And new category body Content type is "application/json"                             # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_body_content_type_is(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.984 TestNG-PoolService-11.com.multimodule.apitesting.driver.RequestBuilder.setRequestBody.Line 101 - request body {
+  "name": "string",
+  "id": "abcat0010000"
+}
+[DEBUG] 2022-03-22 20:03:15.984 TestNG-PoolService-11.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 42 - Set content type : application/json
+  And new category body Content type is "application/json"                                                             # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_body_content_type_is(java.lang.String)
+  And new category body Content type is "application/json"                                                       # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_body_content_type_is(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.986 TestNG-PoolService-9.com.multimodule.apitesting.driver.RequestBuilder.setRequestBody.Line 101 - request body {
+  "id": "string"
+}
+[DEBUG] 2022-03-22 20:03:15.987 TestNG-PoolService-8.com.multimodule.apitesting.driver.RequestBuilder.setRequestBody.Line 101 - request body {
+  "name": "BadRequest",
+  "message": "Invalid Parameters",
+  "code": 400,
+  "className": "bad-request",
+  "data": {},
+  "errors": [
+    "'id' should be string"
+  ]
+}
+  And new product body Content type is "application/json"                                            # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_data_contentType(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.989 TestNG-PoolService-20.com.multimodule.apitesting.driver.RequestBuilder.setBody.Line 64 - request body is {
+  "name": "1254",
+  "type": "string",
+  "price": 0,
+  "shipping": 0,
+  "upc": "4455",
+  "description": "885",
+  "manufacturer": "7566",
+  "model": "2155",
+  "url": "string",
+  "image": "string"
+}
+  And update product body content type is "application/json"                                                         # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.update_product_body_content_type_is(java.lang.String)
+[DEBUG] 2022-03-22 20:03:15.992 TestNG-PoolService-25.com.multimodule.apitesting.driver.RequestBuilder.setBody.Line 64 - request body is {
+  "name": "1",
+  "type": "Product Patched",
+  "upc": "string",
+  "description": "Product Patched",
+  "model": "Product Patched"
+
+}
+[DEBUG] 2022-03-22 20:03:15.992 TestNG-PoolService-25.com.multimodule.apitesting.driver.RequestBuilder.setContentType.Line 42 - Set content type : application/json
+[DEBUG] 2022-03-22 20:03:16.013 TestNG-PoolService-7.com.multimodule.apitesting.driver.RequestBuilder.setBody.Line 71 - request body is {"name":"category","id":"qSllGKwA"}
+Request method:	GET
+Request URI:	http://localhost:3030/categories/abcat0101000
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/products/-1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/categories/-1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/products/0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/categories/0
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/products/0S
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/products/AS
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/categories/0S
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/products/185230
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	http://localhost:3030/categories/AS
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	POST
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+  "name": "1254",
+  "type": "string",
+  "price": 0,
+  "shipping": 0,
+  "upc": "4455",
+  "description": "885",
+  "manufacturer": "7566",
+  "model": "2155",
+  "url": "string",
+  "image": "string"
+}
+Request method:	POST
+Request URI:	http://localhost:3030/categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "category",
+    "id": "16"
+}
+Request method:	POST
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Cat1"
+}
+Request method:	POST
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "BadRequest",
+    "message": "Invalid Parameters",
+    "code": 400,
+    "className": "bad-request",
+    "data": {
+        
+    },
+    "errors": [
+        "'id' should be string"
+    ]
+}
+Request method:	POST
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string"
+}
+Request method:	PATCH
+Request URI:	http://localhost:3030/products/312290
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1",
+    "type": "Product Patched",
+    "upc": "string",
+    "description": "Product Patched",
+    "model": "Product Patched"
+}
+Request method:	POST
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": "string"
+}
+Request method:	POST
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string"
+}
+Request method:	POST
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "string",
+    "description": "string",
+    "manufacturer": "string",
+    "model": "string",
+    "url": "string",
+    "image": "string"
+}
+Request method:	PATCH
+Request URI:	http://localhost:3030/products/312290
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Tiger",
+    "type": "Book",
+    "price": 1222,
+    "shipping": 2666,
+    "upc": "www.com",
+    "description": "Test product",
+    "manufacturer": "Test product",
+    "model": "Test product",
+    "url": "Test product",
+    "image": "Test product"
+}
+Request method:	POST
+Request URI:	http://localhost:3030/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "string",
+    "type": "string",
+    "price": "0",
+    "shipping": 0,
+    "upc": "string",
+    "description": "string",
+    "manufacturer": "string",
+    "model": "string",
+    "url": "string",
+    "image": "string"
+}
+Request method:	PATCH
+Request URI:	http://localhost:3030/categories/abcat0010000
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "string"
+}
+Request method:	PATCH
+Request URI:	http://localhost:3030/categories/abcat0010000
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "string",
+    "id": "abcat0010000"
+}
+Request method:	PATCH
+Request URI:	http://localhost:3030/products/312290
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "type": "Product Patched",
+    "description": "Product Patched",
+    "model": "Product Patched"
+}
+Request method:	POST
+Request URI:	http://localhost:3030/categories
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "category",
+    "id": "qSllGKwA"
+}
+HTTP/1.1 400 Bad Request
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 312
+ETag: W/"138-W3RjAKJQDBh27wD53IWN8CAscOo"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "BadRequest",
+    "message": "Invalid Parameters",
+    "code": 400,
+    "className": "bad-request",
+    "data": {
+        
+    },
+    "errors": [
+        "should have required property 'name'",
+        "should have required property 'type'",
+        "should have required property 'upc'",
+        "should have required property 'description'",
+        "should have required property 'model'"
+    ]
+}
+[DEBUG] 2022-03-22 20:03:17.879 TestNG-PoolService-21.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:17.880 TestNG-PoolService-21.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@50ad5e7
+  When User send a post request to update with "scenarios/addnewproduct/valid-fullbody-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_send_a_post_request_to_update_with(java.lang.String)
+  Then new product response status code is "400"                                                     # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_statuscode_is(java.lang.String)
+HTTP/1.1 400 Bad Request
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 137
+ETag: W/"89-7SSzPzES34FgUjbhV4DJ/qMpZaQ"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "BadRequest",
+    "message": "Invalid Parameters",
+    "code": 400,
+    "className": "bad-request",
+    "data": {
+        
+    },
+    "errors": [
+        "'price' should be number"
+    ]
+}
+[DEBUG] 2022-03-22 20:03:18.044 TestNG-PoolService-23.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:18.044 TestNG-PoolService-23.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@219372a2
+  When User send a post request to update with "scenarios/addnewproduct/invalid-body-price-string-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_send_a_post_request_to_update_with(java.lang.String)
+  Then new product response status code is "400"                                                                # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_statuscode_is(java.lang.String)
+HTTP/1.1 400 Bad Request
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 358
+ETag: W/"166-Vf17aTyyh9q9FoLrP6s8AgqVGKw"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "BadRequest",
+    "message": "Invalid Parameters",
+    "code": 400,
+    "className": "bad-request",
+    "data": {
+        
+    },
+    "errors": [
+        "should NOT have additional properties: 'id'",
+        "should have required property 'name'",
+        "should have required property 'type'",
+        "should have required property 'upc'",
+        "should have required property 'description'",
+        "should have required property 'model'"
+    ]
+}
+[DEBUG] 2022-03-22 20:03:18.086 TestNG-PoolService-9.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:18.086 TestNG-PoolService-9.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@22a80b82
+  When User send a post request to add category with "scenarios/addnewcategory/invalid-body-missing-name-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_send_a_post_request_to_add_category_with(java.lang.String)
+  Then new category response status code is "400"                                                                      # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_status_code_is(java.lang.String)
+HTTP/1.1 400 Bad Request
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 273
+ETag: W/"111-kOpOHaE3E4Y6wh+QeiLeFMDG1gQ"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "BadRequest",
+    "message": "Invalid Parameters",
+    "code": 400,
+    "className": "bad-request",
+    "data": {
+        
+    },
+    "errors": [
+        "should have required property 'type'",
+        "should have required property 'upc'",
+        "should have required property 'description'",
+        "should have required property 'model'"
+    ]
+}
+[DEBUG] 2022-03-22 20:03:18.177 TestNG-PoolService-10.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:18.178 TestNG-PoolService-10.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@27f238cb
+  When User send a post request to add category with "scenarios/addnewcategory/invalid-body-missing-id-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_send_a_post_request_to_add_category_with(java.lang.String)
+  Then new category response status code is "400"                                                                    # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_status_code_is(java.lang.String)
+HTTP/1.1 400 Bad Request
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 523
+ETag: W/"20b-fn6yV8IHw8Om5ciUtlqzGxBmr4M"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "BadRequest",
+    "message": "Invalid Parameters",
+    "code": 400,
+    "className": "bad-request",
+    "data": {
+        
+    },
+    "errors": [
+        "should NOT have additional properties: 'message'",
+        "should NOT have additional properties: 'code'",
+        "should NOT have additional properties: 'className'",
+        "should NOT have additional properties: 'data'",
+        "should NOT have additional properties: 'errors'",
+        "should have required property 'type'",
+        "should have required property 'upc'",
+        "should have required property 'description'",
+        "should have required property 'model'"
+    ]
+}
+[DEBUG] 2022-03-22 20:03:18.357 TestNG-PoolService-8.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:18.358 TestNG-PoolService-8.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@3521272d
+  When User send a post request to add category with "scenarios/addnewcategory/invalid-body-id-int-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_send_a_post_request_to_add_category_with(java.lang.String)
+  Then new category response status code is "400"                                                                # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_status_code_is(java.lang.String)
+HTTP/1.1 400 Bad Request
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 149
+ETag: W/"95-aJOslJerDos07nUgN912Mswm21Y"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "BadRequest",
+    "message": "Invalid Parameters",
+    "code": 400,
+    "className": "bad-request",
+    "data": {
+        
+    },
+    "errors": [
+        "should have required property 'name'"
+    ]
+}
+[DEBUG] 2022-03-22 20:03:18.953 TestNG-PoolService-22.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:18.953 TestNG-PoolService-22.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@96a9177
+  When User send a post request to update with "scenarios/addnewproduct/invalid-body-missing-mandatoryfilds-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_send_a_post_request_to_update_with(java.lang.String)
+  Then new product response status code is "400"                                                                          # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_statuscode_is(java.lang.String)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 106
+ETag: W/"6a-hZwcBqPjSviCF51FjbUg+ygBllE"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id '0S'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:19.182 TestNG-PoolService-5.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.182 TestNG-PoolService-5.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@17ec20fe
+  Given user send a request to get category "/categories/{id}" with "0S"   # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)
+  Then category status code is "404"                                       # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 105
+ETag: W/"69-I0u8sy7zuJnokbXHOiDmc8NAyAg"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id '0'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:19.231 TestNG-PoolService-17.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.231 TestNG-PoolService-17.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@6f9340f
+  Given user send a request to get "/products/{id}" with invalid "0" # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalid(java.lang.String,java.lang.String)
+  Then Negative status code is "404"                                 # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseCode(java.lang.String)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 106
+ETag: W/"6a-tv1wccR55YQ+5b+oKAHHL1MTPNY"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id 'AS'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:19.254 TestNG-PoolService-19.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.255 TestNG-PoolService-19.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@3baff45d
+  Given user send a request to get "/products/{id}" with invalid "AS" # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalid(java.lang.String,java.lang.String)
+  Then Negative status code is "404"                                  # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseCode(java.lang.String)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 105
+ETag: W/"69-I0u8sy7zuJnokbXHOiDmc8NAyAg"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id '0'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:19.301 TestNG-PoolService-4.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.301 TestNG-PoolService-4.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@5cb28710
+  Given user send a request to get category "/categories/{id}" with "0"   # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)
+  Then category status code is "404"                                      # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 106
+ETag: W/"6a-ubnQYSo2YktRYU3YYrwiR+rQPTk"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id '-1'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:19.374 TestNG-PoolService-3.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.374 TestNG-PoolService-3.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@2632bee6
+  Given user send a request to get category "/categories/{id}" with "-1"   # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)
+  Then category status code is "404"                                       # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 106
+ETag: W/"6a-tv1wccR55YQ+5b+oKAHHL1MTPNY"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id 'AS'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:19.380 TestNG-PoolService-6.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.381 TestNG-PoolService-6.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@6945bc10
+  Given user send a request to get category "/categories/{id}" with "AS"   # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)
+  Then category status code is "404"                                       # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)
+  And new product response body should match "scenarios/addnewproduct/error-response.json"           # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_should_match(java.lang.String)
+  And new category response body should match "scenarios/addnewcategory/invalid-body-missing-id-response.json"       # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_match(java.lang.String)
+  And new category response body should match "scenarios/addnewcategory/invalid-body-missing-name-response.json"       # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_match(java.lang.String)
+  And new product response body should match "scenarios/addnewproduct/error-response.json"                      # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_should_match(java.lang.String)
+  And new category response body should match "scenarios/addnewcategory/invalid-body-id-int-response.json"       # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_match(java.lang.String)
+  And new product response body should match "scenarios/addnewproduct/error-response.json"                                # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_should_match(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to add category with invalid data request body parameters and valid content type&quot;, &quot;Optional[User Wants to add a new category]&quot;](4)" classname="com.multimodule.apitesting.runners.Regression" time="8.674"/>
+  <testcase name="runScenario[&quot;User try to add the product with invalid data request body and valid content type&quot;, &quot;Optional[User Wants to add a new product]&quot;](2)" classname="com.multimodule.apitesting.runners.Regression" time="8.674"/>
+  <testcase name="runScenario[&quot;User try to add category with invalid data request body parameters and valid content type&quot;, &quot;Optional[User Wants to add a new category]&quot;](5)" classname="com.multimodule.apitesting.runners.Regression" time="8.674"/>
+  <testcase name="runScenario[&quot;User try to add the product with invalid data request body and valid content type&quot;, &quot;Optional[User Wants to add a new product]&quot;](3)" classname="com.multimodule.apitesting.runners.Regression" time="8.674"/>
+  <testcase name="runScenario[&quot;User try to add the product with valid data and invalid content type&quot;, &quot;Optional[User Wants to add a new product]&quot;](6)" classname="com.multimodule.apitesting.runners.Regression" time="8.674"/>
+  <testcase name="runScenario[&quot;User try to get a product with valid product id&quot;, &quot;Optional[Get One Product by ID]&quot;](7)" classname="com.multimodule.apitesting.runners.Regression" time="8.796">
+    <system-out><![CDATA[HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 106
+ETag: W/"6a-ubnQYSo2YktRYU3YYrwiR+rQPTk"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id '-1'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:19.499 TestNG-PoolService-16.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.499 TestNG-PoolService-16.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@2e0fb64c
+  Given user send a request to get "/products/{id}" with invalid "-1" # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalid(java.lang.String,java.lang.String)
+  Then Negative status code is "404"                                  # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseCode(java.lang.String)
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 106
+ETag: W/"6a-hZwcBqPjSviCF51FjbUg+ygBllE"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id '0S'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:19.540 TestNG-PoolService-18.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.541 TestNG-PoolService-18.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@590dd168
+  Given user send a request to get "/products/{id}" with invalid "0S" # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalid(java.lang.String,java.lang.String)
+  Then Negative status code is "404"                                  # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseCode(java.lang.String)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+ETag: W/"446-00iFowRNmXw+ACmDref4iGqnrzk"
+Content-Encoding: gzip
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+{
+    "id": 185230,
+    "name": "Duracell - C Batteries (4-Pack)",
+    "type": "HardGood",
+    "price": 8.99,
+    "upc": "041333440019",
+    "shipping": 0,
+    "description": "Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack",
+    "manufacturer": "Duracell",
+    "model": "MN1400R4Z",
+    "url": "http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC",
+    "image": "http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg",
+    "createdAt": "2016-11-17T17:58:03.298Z",
+    "updatedAt": "2016-11-17T17:58:03.298Z",
+    "categories": [
+        {
+            "id": "abcat0208002",
+            "name": "Alkaline Batteries",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+            "id": "pcmcat248700050021",
+            "name": "Housewares",
+            "createdAt": "2016-11-17T17:57:05.399Z",
+            "updatedAt": "2016-11-17T17:57:05.399Z"
+        },
+        {
+            "id": "pcmcat303600050001",
+            "name": "Household Batteries",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+            "id": "pcmcat312300050015",
+            "name": "Connected Home & Housewares",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z"
+        }
+    ]
+}
+[DEBUG] 2022-03-22 20:03:19.713 TestNG-PoolService-15.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.713 TestNG-PoolService-15.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@663004d8
+  Given user send a request to get "/products/{id}" with valid "185230"                    # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetWithValid(java.lang.String,java.lang.String)
+  Then Positive status code is "200"                                                       # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.theResponseCode(java.lang.String)
+  And get product response body is "scenarios/getproductbyid/response-body_Id_185230.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.theProductResponseBodyIs(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;get all available product&quot;, &quot;Optional[Get All Products]&quot;](8)" classname="com.multimodule.apitesting.runners.Regression" time="9.204">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+ETag: W/"2f62-V+CqNqfHTd3ZwkOwjNUnmTF4cQE"
+Content-Encoding: gzip
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+{
+    "total": 51996,
+    "limit": 10,
+    "skip": 0,
+    "data": [
+        {
+            "id": 185230,
+            "name": "Duracell - C Batteries (4-Pack)",
+            "type": "HardGood",
+            "price": 8.99,
+            "upc": "041333440019",
+            "shipping": 0,
+            "description": "Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack",
+            "manufacturer": "Duracell",
+            "model": "MN1400R4Z",
+            "url": "http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 185267,
+            "name": "Duracell - D Batteries (4-Pack)",
+            "type": "HardGood",
+            "price": 9.99,
+            "upc": "041333430010",
+            "shipping": 0,
+            "description": "Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack",
+            "manufacturer": "Duracell",
+            "model": "MN1300R4Z",
+            "url": "http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 309062,
+            "name": "Pioneer - 4\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black",
+            "type": "HardGood",
+            "price": 144.99,
+            "upc": "012562165141",
+            "shipping": 0,
+            "description": "80W maximum power (20W RMS); 4\" IMPP composite cone woofer; 3/4\" horn tweeter",
+            "manufacturer": "Pioneer",
+            "model": "TS-X200",
+            "url": "http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0300000",
+                    "name": "Car Electronics & GPS",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0302000",
+                    "name": "Car Audio",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0302005",
+                    "name": "Car Speakers",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat360500050015",
+                    "name": "4\" Car Speakers",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ]
+        },
+        {
+            "id": 312290,
+            "name": "1",
+            "type": "Product Patched",
+            "price": 1222,
+            "upc": "string",
+            "shipping": 2666,
+            "description": "Product Patched",
+            "manufacturer": "Test product",
+            "model": "Product Patched",
+            "url": "Test product",
+            "image": "Test product",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2022-03-22T17:58:40.078Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 333179,
+            "name": "Energizer - N Cell E90 Batteries (2-Pack)",
+            "type": "HardGood",
+            "price": 5.99,
+            "upc": "039800013200",
+            "shipping": 0,
+            "description": "Alkaline batteries; 1.5V",
+            "manufacturer": "Energizer",
+            "model": "E90BP-2",
+            "url": "http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208006",
+                    "name": "Specialty Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 346575,
+            "name": "Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black",
+            "type": "HardGood",
+            "price": 16.99,
+            "upc": "086429002757",
+            "shipping": 0,
+            "description": "From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket",
+            "manufacturer": "Metra",
+            "model": "99-5512",
+            "url": "http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0300000",
+                    "name": "Car Electronics & GPS",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat165900050023",
+                    "name": "Car Installation Parts & Accessories",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050031",
+                    "name": "Deck Installation Parts",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050033",
+                    "name": "Dash Installation Kits",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat331600050007",
+                    "name": "Car Audio Installation Parts",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ]
+        },
+        {
+            "id": 346646,
+            "name": "Metra - Radio Dash Multikit for Select GM Vehicles - Black",
+            "type": "HardGood",
+            "price": 16.99,
+            "upc": "086429003273",
+            "shipping": 0,
+            "description": "From our expanded online assortment; compatible with select GM vehicles; plastic material",
+            "manufacturer": "Metra",
+            "model": "99-4500",
+            "url": "http://www.bestbuy.com/site/metra-radio-dash-multikit-for-select-gm-vehicles-black/346646.p?id=1210376657731&skuId=346646&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/3466/346646_rc.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0300000",
+                    "name": "Car Electronics & GPS",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat165900050023",
+                    "name": "Car Installation Parts & Accessories",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050031",
+                    "name": "Deck Installation Parts",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050033",
+                    "name": "Dash Installation Kits",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat331600050007",
+                    "name": "Car Audio Installation Parts",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ]
+        },
+        {
+            "id": 347137,
+            "name": "Metra - Wiring Harness for Select 1998-2008 Ford Vehicles - Multicolored",
+            "type": "HardGood",
+            "price": 16.99,
+            "upc": "086429056514",
+            "shipping": 0,
+            "description": "Compatible with select 1998-2008 Ford vehicles; connects an aftermarket radio to a vehicle's harness",
+            "manufacturer": "Metra",
+            "model": "70-1771",
+            "url": "http://www.bestbuy.com/site/metra-wiring-harness-for-select-1998-2008-ford-vehicles-multicolored/347137.p?id=1142290459780&skuId=347137&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/9852/9852688_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0300000",
+                    "name": "Car Electronics & GPS",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat165900050023",
+                    "name": "Car Installation Parts & Accessories",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050031",
+                    "name": "Deck Installation Parts",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050034",
+                    "name": "Deck Harnesses",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat331600050007",
+                    "name": "Car Audio Installation Parts",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ]
+        },
+        {
+            "id": 347146,
+            "name": "Metra - Turbo Wire Aftermarket Radio Wire Harness Adapter for Select Vehicles",
+            "type": "HardGood",
+            "price": 16.99,
+            "upc": "086429056507",
+            "shipping": 0,
+            "description": "Compatible with Honda and Acura vehicles; connects an aftermarket radio to your car's harness",
+            "manufacturer": "Metra",
+            "model": "70-1721",
+            "url": "http://www.bestbuy.com/site/metra-turbo-wire-aftermarket-radio-wire-harness-adapter-for-select-vehicles/347146.p?id=1183160746244&skuId=347146&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/3471/347146_rc.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0300000",
+                    "name": "Car Electronics & GPS",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat165900050023",
+                    "name": "Car Installation Parts & Accessories",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050031",
+                    "name": "Deck Installation Parts",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050034",
+                    "name": "Deck Harnesses",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat331600050007",
+                    "name": "Car Audio Installation Parts",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ]
+        },
+        {
+            "id": 347155,
+            "name": "Metra - Wiring Harness for Most 1986-1998 Honda Acura Vehicles - Multicolored",
+            "type": "HardGood",
+            "price": 16.99,
+            "upc": "086429002597",
+            "shipping": 0,
+            "description": "Compatible with most 1986-1998 Honda Acura vehicles; connects an aftermarket radio to a vehicle's harness",
+            "manufacturer": "Metra",
+            "model": "70-1720",
+            "url": "http://www.bestbuy.com/site/metra-wiring-harness-for-most-1986-1998-honda-acura-vehicles-multicolored/347155.p?id=1142292396747&skuId=347155&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/3471/347155_rc.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0300000",
+                    "name": "Car Electronics & GPS",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat165900050023",
+                    "name": "Car Installation Parts & Accessories",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050031",
+                    "name": "Deck Installation Parts",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050034",
+                    "name": "Deck Harnesses",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat331600050007",
+                    "name": "Car Audio Installation Parts",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ]
+        }
+    ]
+}
+[DEBUG] 2022-03-22 20:03:19.908 TestNG-PoolService-14.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.908 TestNG-PoolService-14.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@6dc80928
+  Given User send a get request to "/products"                                            # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetAllProduct.userSendAGetRequestTo(java.lang.String)
+  Then status code is "200"                                                               # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetAllProduct.statusCodeIs(java.lang.String)
+  And response body matches "scenarios/getallproducts/response-body.json" in Api contract # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetAllProduct.responseBodyMatchesInApiContract(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get a Category with valid Category id&quot;, &quot;Optional[Get Category by ID]&quot;](9)" classname="com.multimodule.apitesting.runners.Regression" time="9.222">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+ETag: W/"68a-C8J/PeAVg6rvQkW5JYxyI6rDPAk"
+Content-Encoding: gzip
+Date: Tue, 22 Mar 2022 18:03:19 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+{
+    "id": "abcat0101000",
+    "name": "TVs",
+    "createdAt": "2016-11-17T17:57:04.285Z",
+    "updatedAt": "2016-11-17T17:57:04.285Z",
+    "subCategories": [
+        {
+            "id": "abcat0101001",
+            "name": "All Flat-Panel TVs",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+            "id": "abcat0107000",
+            "name": "TV & Home Theater Accessories",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+            "id": "pcmcat138100050024",
+            "name": "TV & Home Theater Services",
+            "createdAt": "2016-11-17T17:57:04.643Z",
+            "updatedAt": "2016-11-17T17:57:04.643Z"
+        },
+        {
+            "id": "pcmcat193400050018",
+            "name": "LED TVs",
+            "createdAt": "2016-11-17T17:57:05.399Z",
+            "updatedAt": "2016-11-17T17:57:05.399Z"
+        },
+        {
+            "id": "pcmcat205800050000",
+            "name": "3D TVs",
+            "createdAt": "2016-11-17T17:57:05.399Z",
+            "updatedAt": "2016-11-17T17:57:05.399Z"
+        },
+        {
+            "id": "pcmcat220700050011",
+            "name": "Smart TVs",
+            "createdAt": "2016-11-17T17:57:05.399Z",
+            "updatedAt": "2016-11-17T17:57:05.399Z"
+        },
+        {
+            "id": "pcmcat301000050010",
+            "name": "OLED TVs",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+            "id": "pcmcat333800050003",
+            "name": "4K Ultra HD TVs",
+            "createdAt": "2016-11-17T17:57:04.643Z",
+            "updatedAt": "2016-11-17T17:57:04.643Z"
+        },
+        {
+            "id": "pcmcat333800050004",
+            "name": "Curved TVs",
+            "createdAt": "2016-11-17T17:57:04.643Z",
+            "updatedAt": "2016-11-17T17:57:04.643Z"
+        },
+        {
+            "id": "pcmcat333800050005",
+            "name": "Outdoor TVs",
+            "createdAt": "2016-11-17T17:57:04.643Z",
+            "updatedAt": "2016-11-17T17:57:04.643Z"
+        }
+    ],
+    "categoryPath": [
+        {
+            "id": "abcat0100000",
+            "name": "TV & Home Theater",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+            "id": "abcat0101000",
+            "name": "TVs",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z"
+        }
+    ]
+}
+[DEBUG] 2022-03-22 20:03:19.994 TestNG-PoolService-2.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:19.995 TestNG-PoolService-2.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@70a03088
+  Given user send a request to get category "/categories/{id}" with "abcat0101000"                 # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.user_send_a_request_to_get_category_with(java.lang.String,java.lang.String)
+  Then category status code is "200"                                                               # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.category_status_code_is(java.lang.String)
+  And get category response body is "scenarios/getcategorybyid/response-body_Id_abcat0101000.json" # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_response_body_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get category with invalid category ID&quot;, &quot;Optional[Get Category by ID]&quot;](10)" classname="com.multimodule.apitesting.runners.Regression" time="9.223">
+    <system-out><![CDATA[  And there is no "No record found for id '-1'" found for this category id # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_error_response_body_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get product with invalid&quot;, &quot;Optional[Get One Product by ID]&quot;](11)" classname="com.multimodule.apitesting.runners.Regression" time="9.223">
+    <system-out><![CDATA[  And there is no "No record found for id '-1'" found for this id     # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseBody(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get product with invalid&quot;, &quot;Optional[Get One Product by ID]&quot;](12)" classname="com.multimodule.apitesting.runners.Regression" time="9.224">
+    <system-out><![CDATA[  And there is no "No record found for id 'AS'" found for this id     # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseBody(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get category with invalid category ID&quot;, &quot;Optional[Get Category by ID]&quot;](13)" classname="com.multimodule.apitesting.runners.Regression" time="9.224">
+    <system-out><![CDATA[  And there is no "No record found for id 'AS'" found for this category id # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_error_response_body_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get category with invalid category ID&quot;, &quot;Optional[Get Category by ID]&quot;](14)" classname="com.multimodule.apitesting.runners.Regression" time="9.225">
+    <system-out><![CDATA[  And there is no "No record found for id '0S'" found for this category id # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_error_response_body_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get category with invalid category ID&quot;, &quot;Optional[Get Category by ID]&quot;](15)" classname="com.multimodule.apitesting.runners.Regression" time="9.225">
+    <system-out><![CDATA[  And there is no "No record found for id '0'" found for this category id # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetCategoryByID.get_category_error_response_body_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get product with invalid&quot;, &quot;Optional[Get One Product by ID]&quot;](16)" classname="com.multimodule.apitesting.runners.Regression" time="9.226">
+    <system-out><![CDATA[  And there is no "No record found for id '0S'" found for this id     # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseBody(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to get product with invalid&quot;, &quot;Optional[Get One Product by ID]&quot;](17)" classname="com.multimodule.apitesting.runners.Regression" time="9.226">
+    <system-out><![CDATA[  And there is no "No record found for id '0'" found for this id     # com.multimodule.apitesting.stepDefinitions.testSteps.products.GetProductByID.userSendARequestToGetCategoryWithInvalidResponseBody(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to add the category with valid data&quot;, &quot;Optional[User Wants to add a new category]&quot;](18)" classname="com.multimodule.apitesting.runners.Regression" time="10.226">
+    <failure message="1 expectation failed.&#10;JSON path isEmpty() doesn&apos;t match.&#10;Expected: is &lt;true&gt;&#10;  Actual: &lt;false&gt;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 247
+ETag: W/"f7-3BxJ2g0QfYILajR74ircbzpduWw"
+Date: Tue, 22 Mar 2022 18:03:21 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": 9999738,
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string",
+    "updatedAt": "2022-03-22T18:03:18.058Z",
+    "createdAt": "2022-03-22T18:03:18.058Z"
+}
+[DEBUG] 2022-03-22 20:03:21.918 TestNG-PoolService-13.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:21.919 TestNG-PoolService-13.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@696e21ca
+  Given A PRE-created product with data "scenarios/deleteproductbyid/valid-fullbody-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.a_pre_created_product_with_data(java.lang.String)
+  And The user wants to delete this product using the ID                                          # com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.the_user_wants_to_delete_this_product_using_the_id()
+Request method:	DELETE
+Request URI:	http://localhost:3030/products/9999738
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string"
+}
+Request method:	DELETE
+Request URI:	http://localhost:3030/products/9999738
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string"
+}
+HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 113
+ETag: W/"71-g0/oIr5m7VoVxolIIR1lX26tq7w"
+Date: Tue, 22 Mar 2022 18:03:22 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "category",
+    "id": "qSllGKwA",
+    "updatedAt": "2022-03-22T18:03:18.094Z",
+    "createdAt": "2022-03-22T18:03:18.094Z"
+}
+[DEBUG] 2022-03-22 20:03:22.332 TestNG-PoolService-7.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:22.332 TestNG-PoolService-7.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@5cf7e322
+  When User send a post request to set new category with unique ID and name "category" # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.user_send_a_post_request_to_set_new_category_with_unique_id_and_name(java.lang.String)
+  Then new category response status code is "201"                                      # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_status_code_is(java.lang.String)
+  And new category response header contains "ETag" header                              # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_header_contains_header(java.lang.String)
+  And new category response body  should be is empty                                   # com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty()
+      java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor294.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.PostNewCategory.new_category_response_body_should_be_is_empty(PostNewCategory.java:58)
+	at âœ½.new category response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/PostNewCategory.feature:12)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to add the product with valid data&quot;, &quot;Optional[User Wants to add a new product]&quot;](19)" classname="com.multimodule.apitesting.runners.Regression" time="10.452">
+    <failure message="1 expectation failed.&#10;JSON path isEmpty() doesn&apos;t match.&#10;Expected: is &lt;true&gt;&#10;  Actual: &lt;false&gt;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 247
+ETag: W/"f7-m67Ry0kn57ooGMk4ZyKACVL2nMI"
+Date: Tue, 22 Mar 2022 18:03:22 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": 9999739,
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string",
+    "updatedAt": "2022-03-22T18:03:18.101Z",
+    "createdAt": "2022-03-22T18:03:18.101Z"
+}
+[DEBUG] 2022-03-22 20:03:22.814 TestNG-PoolService-20.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:22.814 TestNG-PoolService-20.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@520f25ab
+  When User send a post request to update with "scenarios/addnewproduct/valid-fullbody-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.user_send_a_post_request_to_update_with(java.lang.String)
+  Then new product response status code is "201"                                                     # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_statuscode_is(java.lang.String)
+  And new product response header contains "ETag" header                                             # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_header_contains(java.lang.String)
+  And new product response body  should be is empty                                                  # com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_is_empty()
+      java.lang.AssertionError: 1 expectation failed.
+JSON path isEmpty() doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor294.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:262)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:109)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.emptyBody(Assertions.java:76)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.products.PostNewProduct.response_body_is_empty(PostNewProduct.java:52)
+	at âœ½.new product response body  should be is empty(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/products/PostNewProduct.feature:12)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;get all available Categories&quot;, &quot;Optional[Get All Categories]&quot;](20)" classname="com.multimodule.apitesting.runners.Regression" time="11.733">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 107
+ETag: W/"6b-Y0f1xYquUcX38m86ogE/fOr0lec"
+Date: Tue, 22 Mar 2022 18:03:23 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "category",
+    "id": "16",
+    "updatedAt": "2022-03-22T18:03:18.495Z",
+    "createdAt": "2022-03-22T18:03:18.495Z"
+}
+[DEBUG] 2022-03-22 20:03:23.309 TestNG-PoolService-0.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:23.317 TestNG-PoolService-0.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@3a08f758
+  Given A PRE-created category with data "scenarios/deletecategorybyid/valid-fullbody-request.json"                 # com.multimodule.apitesting.stepDefinitions.testSteps.category.DeleteCategory.a_pre_created_category_with_data(java.lang.String)
+Request method:	DELETE
+Request URI:	http://localhost:3030/categories/16
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "category",
+    "id": "16"
+}
+Request method:	DELETE
+Request URI:	http://localhost:3030/categories/16
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "category",
+    "id": "16"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+ETag: W/"23db-KRw9u93VQCaP0WAxkU6psNHQROI"
+Content-Encoding: gzip
+Date: Tue, 22 Mar 2022 18:03:23 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+{
+    "total": 4320,
+    "limit": 10,
+    "skip": 0,
+    "data": [
+        {
+            "id": "abcat0010000",
+            "name": "string",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2022-03-22T18:03:18.183Z",
+            "subCategories": [
+                {
+                    "id": "abcat0020004",
+                    "name": "Unique Gifts",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat748300579354",
+                    "name": "Family Gift Ideas",
+                    "createdAt": "2016-11-17T17:57:04.899Z",
+                    "updatedAt": "2016-11-17T17:57:04.899Z"
+                },
+                {
+                    "id": "pcmcat748301108075",
+                    "name": "Stocking Stuffers",
+                    "createdAt": "2016-11-17T17:57:04.899Z",
+                    "updatedAt": "2016-11-17T17:57:04.899Z"
+                },
+                {
+                    "id": "pcmcat84000050000",
+                    "name": "Weddings",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat84000050001",
+                    "name": "Anniversaries",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat84000050002",
+                    "name": "Business Gifts",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat84000050004",
+                    "name": "Baby Showers",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat94300050028",
+                    "name": "Birthdays",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                }
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0010000",
+                    "name": "string",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2022-03-22T18:03:18.183Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0020001",
+            "name": "Learning Toys",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0010000",
+                    "name": "string",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2022-03-22T18:03:18.183Z"
+                },
+                {
+                    "id": "abcat0020001",
+                    "name": "Learning Toys",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0020002",
+            "name": "DVD Games",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0010000",
+                    "name": "string",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2022-03-22T18:03:18.183Z"
+                },
+                {
+                    "id": "abcat0020002",
+                    "name": "DVD Games",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0020004",
+            "name": "Unique Gifts",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0010000",
+                    "name": "string",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2022-03-22T18:03:18.183Z"
+                },
+                {
+                    "id": "abcat0020004",
+                    "name": "Unique Gifts",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0100000",
+            "name": "TV & Home Theater",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                {
+                    "id": "abcat0101000",
+                    "name": "TVs",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102000",
+                    "name": "Blu-ray & DVD Players",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0105000",
+                    "name": "TV & Internet Service Providers",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0106000",
+                    "name": "TV Stands, Mounts & Furniture",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0107000",
+                    "name": "TV & Home Theater Accessories",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0203000",
+                    "name": "Home Theater Systems",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0205007",
+                    "name": "Sound Bars",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat138100050024",
+                    "name": "TV & Home Theater Services",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                },
+                {
+                    "id": "pcmcat139900050002",
+                    "name": "Magnolia Home Theater",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                },
+                {
+                    "id": "pcmcat158900050008",
+                    "name": "Projectors & Screens",
+                    "createdAt": "2016-11-17T17:57:04.899Z",
+                    "updatedAt": "2016-11-17T17:57:04.899Z"
+                },
+                {
+                    "id": "pcmcat161100050040",
+                    "name": "Streaming Media Players",
+                    "createdAt": "2016-11-17T17:57:04.899Z",
+                    "updatedAt": "2016-11-17T17:57:04.899Z"
+                }
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0100000",
+                    "name": "TV & Home Theater",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0101000",
+            "name": "TVs",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                {
+                    "id": "abcat0101001",
+                    "name": "All Flat-Panel TVs",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0107000",
+                    "name": "TV & Home Theater Accessories",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat138100050024",
+                    "name": "TV & Home Theater Services",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                },
+                {
+                    "id": "pcmcat193400050018",
+                    "name": "LED TVs",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat205800050000",
+                    "name": "3D TVs",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat220700050011",
+                    "name": "Smart TVs",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat301000050010",
+                    "name": "OLED TVs",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat333800050003",
+                    "name": "4K Ultra HD TVs",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                },
+                {
+                    "id": "pcmcat333800050004",
+                    "name": "Curved TVs",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                },
+                {
+                    "id": "pcmcat333800050005",
+                    "name": "Outdoor TVs",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0100000",
+                    "name": "TV & Home Theater",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0101000",
+                    "name": "TVs",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0101001",
+            "name": "All Flat-Panel TVs",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                {
+                    "id": "pcmcat138100050024",
+                    "name": "TV & Home Theater Services",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0100000",
+                    "name": "TV & Home Theater",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0101000",
+                    "name": "TVs",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0101001",
+                    "name": "All Flat-Panel TVs",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0102000",
+            "name": "Blu-ray & DVD Players",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                {
+                    "id": "abcat0102003",
+                    "name": "Blu-ray Players",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102005",
+                    "name": "DVD Players",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102006",
+                    "name": "DVD Recorders",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102007",
+                    "name": "DVD/VCR Combos",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat219900050000",
+                    "name": "Portable DVD Players & Accessories",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                }
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0100000",
+                    "name": "TV & Home Theater",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102000",
+                    "name": "Blu-ray & DVD Players",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0102003",
+            "name": "Blu-ray Players",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                {
+                    "id": "pcmcat205900050012",
+                    "name": "3D Blu-ray Players",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat748301694302",
+                    "name": "Streaming Blu-ray Players",
+                    "createdAt": "2016-11-17T17:57:04.899Z",
+                    "updatedAt": "2016-11-17T17:57:04.899Z"
+                }
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0100000",
+                    "name": "TV & Home Theater",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102000",
+                    "name": "Blu-ray & DVD Players",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102003",
+                    "name": "Blu-ray Players",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": "abcat0102005",
+            "name": "DVD Players",
+            "createdAt": "2016-11-17T17:57:04.285Z",
+            "updatedAt": "2016-11-17T17:57:04.285Z",
+            "subCategories": [
+                {
+                    "id": "pcmcat138100050024",
+                    "name": "TV & Home Theater Services",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ],
+            "categoryPath": [
+                {
+                    "id": "abcat0100000",
+                    "name": "TV & Home Theater",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102000",
+                    "name": "Blu-ray & DVD Players",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0102005",
+                    "name": "DVD Players",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        }
+    ]
+}
+[DEBUG] 2022-03-22 20:03:23.413 TestNG-PoolService-1.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:23.414 TestNG-PoolService-1.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@42b4be9
+  Given User send a get Categories request to "/categories"                                            # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetAllCategories.user_send_a_get_categories_request_to(java.lang.String)
+  Then Categories status code is "200"                                                                 # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetAllCategories.categories_status_code_is(java.lang.String)
+  And Categories response body matches "scenarios/getallcategories/response-body.json" in Api contract # com.multimodule.apitesting.stepDefinitions.testSteps.category.GetAllCategories.categories_response_body_matches_in_api_contract(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to update the product with valid data&quot;, &quot;Optional[User Wants to update a product data]&quot;](21)" classname="com.multimodule.apitesting.runners.Regression" time="11.787">
+    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;image&quot;,&quot;manufacturer&quot;,&quot;model&quot;,&quot;name&quot;,&quot;price&quot;,&quot;shipping&quot;,&quot;upc&quot;,&quot;url&quot;]&#10;error: instance type (object) does not match any allowed primitive type (allowed: [&quot;string&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;type&quot;&#10;    found: &quot;object&quot;&#10;    expected: [&quot;string&quot;]&#10;&#10;  Actual: {&quot;id&quot;:312290,&quot;name&quot;:&quot;1&quot;,&quot;type&quot;:&quot;Product Patched&quot;,&quot;price&quot;:1222,&quot;upc&quot;:&quot;string&quot;,&quot;shipping&quot;:2666,&quot;description&quot;:&quot;Product Patched&quot;,&quot;manufacturer&quot;:&quot;Test product&quot;,&quot;model&quot;:&quot;Product Patched&quot;,&quot;url&quot;:&quot;Test product&quot;,&quot;image&quot;:&quot;Test product&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2022-03-22T18:03:18.969Z&quot;}&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]
+    level: "warning"
+    schema: {"loadingURI":"#","pointer":""}
+    domain: "syntax"
+    ignored: ["image","manufacturer","model","name","price","shipping","upc","url"]
+error: instance type (object) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "object"
+    expected: ["string"]
+
+  Actual: {"id":312290,"name":"1","type":"Product Patched","price":1222,"upc":"string","shipping":2666,"description":"Product Patched","manufacturer":"Test product","model":"Product Patched","url":"Test product","image":"Test product","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2022-03-22T18:03:18.969Z"}
+
+]]></failure>
+    <system-out><![CDATA[HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 115
+ETag: W/"73-7ufN/LkJLrdwzEBKxXC6zCNRGU8"
+Date: Tue, 22 Mar 2022 18:03:23 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": "abcat0010000",
+    "name": "string",
+    "createdAt": "2016-11-17T17:57:04.285Z",
+    "updatedAt": "2022-03-22T18:03:18.183Z"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 303
+ETag: W/"12f-2Vq2sgjN+F1a92c9WM6ib8kfrk8"
+Date: Tue, 22 Mar 2022 18:03:23 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": 312290,
+    "name": "1",
+    "type": "Product Patched",
+    "price": 1222,
+    "upc": "string",
+    "shipping": 2666,
+    "description": "Product Patched",
+    "manufacturer": "Test product",
+    "model": "Product Patched",
+    "url": "Test product",
+    "image": "Test product",
+    "createdAt": "2016-11-17T17:58:03.298Z",
+    "updatedAt": "2022-03-22T18:03:18.969Z"
+}
+[DEBUG] 2022-03-22 20:03:23.539 TestNG-PoolService-12.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:23.541 TestNG-PoolService-26.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:23.541 TestNG-PoolService-12.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@384a6a
+[DEBUG] 2022-03-22 20:03:23.541 TestNG-PoolService-26.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@7062f245
+  When User send a patch request to update category with "scenarios/updatecategory/UpdateCategory_MissingName-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.user_send_a_patch_request_to_update_category_with(java.lang.String)
+  When User send a patch request to update with "scenarios/updateproduct/UpdateProduct_MissingName-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_send_a_patch_request_to_update_with(java.lang.String)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 303
+ETag: W/"12f-2Vq2sgjN+F1a92c9WM6ib8kfrk8"
+Date: Tue, 22 Mar 2022 18:03:23 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": 312290,
+    "name": "1",
+    "type": "Product Patched",
+    "price": 1222,
+    "upc": "string",
+    "shipping": 2666,
+    "description": "Product Patched",
+    "manufacturer": "Test product",
+    "model": "Product Patched",
+    "url": "Test product",
+    "image": "Test product",
+    "createdAt": "2016-11-17T17:58:03.298Z",
+    "updatedAt": "2022-03-22T18:03:18.969Z"
+}
+[DEBUG] 2022-03-22 20:03:23.542 TestNG-PoolService-24.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:23.542 TestNG-PoolService-24.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@a5e135c
+  When User send a patch request to update with "scenarios/updateproduct/UpdateProduct_AllFields-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_send_a_patch_request_to_update_with(java.lang.String)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 115
+ETag: W/"73-7ufN/LkJLrdwzEBKxXC6zCNRGU8"
+Date: Tue, 22 Mar 2022 18:03:23 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": "abcat0010000",
+    "name": "string",
+    "createdAt": "2016-11-17T17:57:04.285Z",
+    "updatedAt": "2022-03-22T18:03:18.183Z"
+}
+[DEBUG] 2022-03-22 20:03:23.542 TestNG-PoolService-11.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:23.542 TestNG-PoolService-11.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@c2c5d03
+  Then update product response status code is "200"                                                            # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_StatusCode(java.lang.String)
+  And update product response header contains "ETag" header                                                    # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validHeaders_HeadersContains(java.lang.String)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 303
+ETag: W/"12f-2Vq2sgjN+F1a92c9WM6ib8kfrk8"
+Date: Tue, 22 Mar 2022 18:03:23 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": 312290,
+    "name": "1",
+    "type": "Product Patched",
+    "price": 1222,
+    "upc": "string",
+    "shipping": 2666,
+    "description": "Product Patched",
+    "manufacturer": "Test product",
+    "model": "Product Patched",
+    "url": "Test product",
+    "image": "Test product",
+    "createdAt": "2016-11-17T17:58:03.298Z",
+    "updatedAt": "2022-03-22T18:03:18.969Z"
+}
+[DEBUG] 2022-03-22 20:03:23.543 TestNG-PoolService-25.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:23.543 TestNG-PoolService-25.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@507c5ea8
+  When User send a patch request to update with "scenarios/updateproduct/UpdateProduct_MandatoryFields-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.user_send_a_patch_request_to_update_with(java.lang.String)
+  When User send a patch request to update category with "scenarios/updatecategory/UpdateCategory_AllFields-request.json" # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.user_send_a_patch_request_to_update_category_with(java.lang.String)
+  Then update category response status code is "200"                                                                      # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_status_code_is(java.lang.String)
+  And update category response header contains "ETag" header                                                              # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_header_contains_header(java.lang.String)
+  Then update product response status code is "200"                                                                  # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_StatusCode(java.lang.String)
+  And update product response header contains "ETag" header                                                          # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validHeaders_HeadersContains(java.lang.String)
+  And update product response body matches "scenarios/updateproduct/UpdateProduct_AllFields-response.json"     # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(java.lang.String)
+      java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]
+    level: "warning"
+    schema: {"loadingURI":"#","pointer":""}
+    domain: "syntax"
+    ignored: ["image","manufacturer","model","name","price","shipping","upc","url"]
+error: instance type (object) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "object"
+    expected: ["string"]
+
+  Actual: {"id":312290,"name":"1","type":"Product Patched","price":1222,"upc":"string","shipping":2666,"description":"Product Patched","manufacturer":"Test product","model":"Product Patched","url":"Test product","image":"Test product","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2022-03-22T18:03:18.969Z"}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor294.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:99)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.bodySchema(Assertions.java:44)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(UpdateProductByID.java:56)
+	at âœ½.update product response body matches "scenarios/updateproduct/UpdateProduct_AllFields-response.json"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/products/UpdateProductByID.feature:12)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to update the product with invalid data Missing product mandatory items&quot;, &quot;Optional[User Wants to update a product data]&quot;](22)" classname="com.multimodule.apitesting.runners.Regression" time="12.267">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+]]></failure>
+    <system-out><![CDATA[  Then update product response status code is "400"                                                              # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_StatusCode(java.lang.String)
+      java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor294.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor320.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.statusCode(Assertions.java:52)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_StatusCode(UpdateProductByID.java:44)
+	at âœ½.update product response status code is "400"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/products/UpdateProductByID.feature:24)
+
+  And update product response body matches "scenarios/updateproduct/UpdateProduct-Error-response.json"           # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to update the category with invalid data Missing product mandatory items&quot;, &quot;Optional[update a category data]&quot;](23)" classname="com.multimodule.apitesting.runners.Regression" time="12.339">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+]]></failure>
+    <system-out><![CDATA[  Then update category response status code is "400"                                                                        # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_status_code_is(java.lang.String)
+      java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor294.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:127)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor320.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.statusCode(Assertions.java:52)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_status_code_is(UpdateCategoryByID.java:41)
+	at âœ½.update category response status code is "400"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/categories/UpdateCategoryByID.feature:22)
+
+  And update category response body matches "scenarios/updatecategory/UpdateCategory-Error-response.json"                   # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_body_matches(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to update the product with valid data&quot;, &quot;Optional[User Wants to update a product data]&quot;](24)" classname="com.multimodule.apitesting.runners.Regression" time="12.507">
+    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;image&quot;,&quot;manufacturer&quot;,&quot;model&quot;,&quot;name&quot;,&quot;price&quot;,&quot;shipping&quot;,&quot;upc&quot;,&quot;url&quot;]&#10;error: instance type (object) does not match any allowed primitive type (allowed: [&quot;string&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;type&quot;&#10;    found: &quot;object&quot;&#10;    expected: [&quot;string&quot;]&#10;&#10;  Actual: {&quot;id&quot;:312290,&quot;name&quot;:&quot;1&quot;,&quot;type&quot;:&quot;Product Patched&quot;,&quot;price&quot;:1222,&quot;upc&quot;:&quot;string&quot;,&quot;shipping&quot;:2666,&quot;description&quot;:&quot;Product Patched&quot;,&quot;manufacturer&quot;:&quot;Test product&quot;,&quot;model&quot;:&quot;Product Patched&quot;,&quot;url&quot;:&quot;Test product&quot;,&quot;image&quot;:&quot;Test product&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2022-03-22T18:03:18.969Z&quot;}&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]
+    level: "warning"
+    schema: {"loadingURI":"#","pointer":""}
+    domain: "syntax"
+    ignored: ["image","manufacturer","model","name","price","shipping","upc","url"]
+error: instance type (object) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "object"
+    expected: ["string"]
+
+  Actual: {"id":312290,"name":"1","type":"Product Patched","price":1222,"upc":"string","shipping":2666,"description":"Product Patched","manufacturer":"Test product","model":"Product Patched","url":"Test product","image":"Test product","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2022-03-22T18:03:18.969Z"}
+
+]]></failure>
+    <system-out><![CDATA[  And update product response body matches "scenarios/updateproduct/UpdateProduct_MandatoryFields-response.json"     # com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(java.lang.String)
+      java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [image, manufacturer, model, name, price, shipping, upc, url]
+    level: "warning"
+    schema: {"loadingURI":"#","pointer":""}
+    domain: "syntax"
+    ignored: ["image","manufacturer","model","name","price","shipping","upc","url"]
+error: instance type (object) does not match any allowed primitive type (allowed: ["string"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "type"
+    found: "object"
+    expected: ["string"]
+
+  Actual: {"id":312290,"name":"1","type":"Product Patched","price":1222,"upc":"string","shipping":2666,"description":"Product Patched","manufacturer":"Test product","model":"Product Patched","url":"Test product","image":"Test product","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2022-03-22T18:03:18.969Z"}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$2.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at jdk.internal.reflect.GeneratedMethodAccessor294.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:99)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.multimodule.apitesting.driver.Assertions.bodySchema(Assertions.java:44)
+	at com.multimodule.apitesting.stepDefinitions.testSteps.products.UpdateProductByID.updateProductData_validBody_BodyMatches(UpdateProductByID.java:56)
+	at âœ½.update product response body matches "scenarios/updateproduct/UpdateProduct_MandatoryFields-response.json"(file:///C:/Users/Khaled%20M%20Farh/Downloads/test-multi-module-project/test-api-project/src/test/resources/featuers/../featuers/products/UpdateProductByID.feature:12)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to update the category with valid data&quot;, &quot;Optional[update a category data]&quot;](25)" classname="com.multimodule.apitesting.runners.Regression" time="12.509">
+    <system-out><![CDATA[  And update category response body matches "scenarios/updatecategory/UpdateCategory_AllFields-response.json"             # com.multimodule.apitesting.stepDefinitions.testSteps.category.UpdateCategoryByID.update_category_response_body_matches(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User will try to delete a product using a valid category ID&quot;, &quot;Optional[Delete a category using the category ID]&quot;](26)" classname="com.multimodule.apitesting.runners.Regression" time="12.888">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 247
+ETag: W/"f7-JqMQw37xf6mhfTcue1AZEUVxGS8"
+Date: Tue, 22 Mar 2022 18:03:24 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": 9999738,
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "upc": "4455",
+    "shipping": 0,
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string",
+    "createdAt": "2022-03-22T18:03:18.058Z",
+    "updatedAt": "2022-03-22T18:03:18.058Z"
+}
+[DEBUG] 2022-03-22 20:03:24.014 TestNG-PoolService-13.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:24.014 TestNG-PoolService-13.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@55bb1b71
+  When user sends a delete request to "/products/{id}" where id is the value of product ID        # com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.user_sends_a_delete_request_to_where_id_is_the_value_of_product_id(java.lang.String)
+  Then deleted product status code is "200"                                                       # com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.deleted_product_status_code_is(java.lang.String)
+Request method:	GET
+Request URI:	http://localhost:3030/products/9999738
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string"
+}
+Request method:	GET
+Request URI:	http://localhost:3030/products/9999738
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string"
+}
+Request method:	GET
+Request URI:	http://localhost:3030/products/9999738
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "1254",
+    "type": "string",
+    "price": 0,
+    "shipping": 0,
+    "upc": "4455",
+    "description": "885",
+    "manufacturer": "7566",
+    "model": "2155",
+    "url": "string",
+    "image": "string"
+}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Vary: Accept, Accept-Encoding
+Content-Type: application/json; charset=utf-8
+Content-Length: 107
+ETag: W/"6b-AThSFvLsNnvY1toiEhjuGrsJQb4"
+Date: Tue, 22 Mar 2022 18:03:24 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "id": "16",
+    "name": "category",
+    "createdAt": "2022-03-22T18:03:18.495Z",
+    "updatedAt": "2022-03-22T18:03:18.495Z"
+}
+[DEBUG] 2022-03-22 20:03:24.491 TestNG-PoolService-0.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:24.493 TestNG-PoolService-0.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@522f1a80
+  When user sends a delete category request to "/categories/{id}" with ID "16" where id is the value of category ID # com.multimodule.apitesting.stepDefinitions.testSteps.category.DeleteCategory.user_sends_a_delete_category_request_to_where_id_is_the_value_of_category_id(java.lang.String,java.lang.String)
+  Then deleted category status code is "200"                                                                        # com.multimodule.apitesting.stepDefinitions.testSteps.category.DeleteCategory.deleted_category_status_code_is(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User will try to delete a product using a valid product ID&quot;, &quot;Optional[Delete a product using the product ID]&quot;](27)" classname="com.multimodule.apitesting.runners.Regression" time="12.931">
+    <system-out><![CDATA[HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Allow: GET,POST,PUT,PATCH,DELETE
+Content-Type: application/json; charset=utf-8
+Content-Length: 111
+ETag: W/"6f-3tHTMElrXany+AtdiHA3sHLU7jU"
+Vary: Accept-Encoding
+Date: Tue, 22 Mar 2022 18:03:24 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{
+    "name": "NotFound",
+    "message": "No record found for id '9999738'",
+    "code": 404,
+    "className": "not-found",
+    "errors": {
+        
+    }
+}
+[DEBUG] 2022-03-22 20:03:24.564 TestNG-PoolService-13.com.multimodule.apitesting.driver.Assertions.<init>.Line 30 - Start assertion process
+[DEBUG] 2022-03-22 20:03:24.564 TestNG-PoolService-13.com.multimodule.apitesting.driver.ResponseConfig.<init>.Line 26 - response body is io.restassured.internal.RestAssuredResponseImpl@3feba1bc
+  And if the user try it to get this product the status code is "404"                             # com.multimodule.apitesting.stepDefinitions.testSteps.products.DeleteProduct.if_the_user_try_it_to_get_this_product(java.lang.String)
+]]></system-out>
+  </testcase>
+</testsuite>

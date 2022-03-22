@@ -1,0 +1,12 @@
+{
+  "name": "string",
+  "type": "string",
+  "price": 0,
+  "shipping": 0,
+  "upc": "string",
+  "description": "string",
+  "manufacturer": "string",
+  "model": "string",
+  "url": "string",
+  "image": "string"
+}

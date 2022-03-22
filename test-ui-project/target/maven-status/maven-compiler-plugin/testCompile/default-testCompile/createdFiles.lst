@@ -1,0 +1,8 @@
+com\multimodule\uitesting\stepDefinitions\testSteps\PlaceOrderTestSteps.class
+com\multimodule\uitesting\runners\Smoke.class
+com\multimodule\uitesting\runners\Regression.class
+com\multimodule\uitesting\stepDefinitions\hooks\Hooks.class
+com\multimodule\uitesting\stepDefinitions\testSteps\SortProductsTestSteps.class
+com\multimodule\uitesting\stepDefinitions\testSteps\LogoutTestSteps.class
+com\multimodule\uitesting\stepDefinitions\testSteps\LoginTestSteps.class
+com\multimodule\uitesting\testbase\TestBase.class

@@ -1,0 +1,688 @@
+swagger: '2.0'
+info:
+  version: 1.1.0
+  title: Best Buy API Playground
+  description: A sample dataset and API for you to experiment with.
+  contact:
+    name: Best Buy API team
+    email: developer@bestbuy.com
+host: localhost:3030
+basePath: /
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+tags:
+  - name: products
+    description: Find, create, update and remove products
+  - name: stores
+    description: Find, create, update and remove stores
+  - name: services
+    description: Find, create, update and remove in-store services
+  - name: categories
+    description: Find, create, update and remove product categories
+  - name: utilities
+    description: API application functionality for monitoring version and health information
+paths:
+  /products:
+    get:
+      tags:
+        - products
+      description: Returns all products that match the given filter criteria. If no filters are included, defaults to returning a paginated list of all products.
+      operationId: findProducts
+      produces:
+        - application/json
+      parameters:
+        - name: $limit
+          in: query
+          description: Limit the number of products returned.
+          required: false
+          type: integer
+        - name: $skip
+          in: query
+          description: Skip the specified number of products.
+          required: false
+          type: integer
+      responses:
+        '200':
+          description: Product response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/product'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    post:
+      tags:
+        - products
+      description: Creates a new product
+      operationId: addProduct
+      produces:
+        - application/json
+      parameters:
+        - name: product
+          in: body
+          description: Product to add
+          required: true
+          schema:
+            $ref: '#/definitions/product'
+      responses:
+        '200':
+          description: Empty response
+        '400':
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+  /products/{id}:
+    get:
+      tags:
+        - products
+      description: Returns a product based on an ID,
+      operationId: findProductById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ID of product to fetch
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: Product response
+          schema:
+            $ref: '#/definitions/product'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    patch:
+      tags:
+        - products
+      description: Updates a product based on an ID,
+      operationId: updateProductById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ID of product to fetch
+          required: true
+          type: integer
+          format: int64
+        - name: product
+          in: body
+          description: Product attributes to update
+          required: true
+          schema:
+            $ref: '#/definitions/product'
+      responses:
+        '200':
+          description: Product response
+          schema:
+            $ref: '#/definitions/product'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    delete:
+      tags:
+        - products
+      description: Deletes a single product based on the ID supplied
+      operationId: deleteProduct
+      parameters:
+        - name: id
+          in: path
+          description: ID of product to delete
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: Product deleted
+        '400':
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+  /stores:
+    get:
+      tags:
+        - stores
+      description: Returns all stores that match the given filter criteria. If no filters are included, defaults to returning a paginated list of all stores.
+      operationId: findStores
+      produces:
+        - application/json
+      parameters:
+        - name: $limit
+          in: query
+          description: Limit the number of stores returned.
+          required: false
+          type: integer
+        - name: $skip
+          in: query
+          description: Skip the specified number of stores.
+          required: false
+          type: integer
+      responses:
+        '200':
+          description: Store response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/store'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    post:
+      tags:
+        - stores
+      description: Creates a new store
+      operationId: addStore
+      produces:
+        - application/json
+      parameters:
+        - name: store
+          in: body
+          description: Store to add
+          required: true
+          schema:
+            $ref: '#/definitions/store'
+      responses:
+        '200':
+          description: Empty response
+        '400':
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+  /stores/{id}:
+    get:
+      tags:
+        - stores
+      description: Returns a store based on store ID
+      operationId: findStoreById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ID of store to fetch
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: Store response
+          schema:
+            $ref: '#/definitions/store'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    patch:
+      tags:
+        - stores
+      description: Updates a store based on store ID
+      operationId: updateStoreById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ID of store to update
+          required: true
+          type: integer
+          format: int64
+        - name: store
+          in: body
+          description: Store attributes to update
+          required: true
+          schema:
+            $ref: '#/definitions/store'
+      responses:
+        '200':
+          description: Store response
+          schema:
+            $ref: '#/definitions/store'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    delete:
+      tags:
+        - stores
+      description: Deletes a single store based on the ID supplied
+      operationId: deletestore
+      parameters:
+        - name: id
+          in: path
+          description: ID of store to delete
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: Store deleted
+        '400':
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+  /services:
+    get:
+      tags:
+        - services
+      description: Returns all services that match the given filter criteria. If no filters are included, defaults to returning a paginated list of all services.
+      operationId: findServices
+      produces:
+        - application/json
+      parameters:
+        - name: $limit
+          in: query
+          description: Limit the number of services returned.
+          required: false
+          type: integer
+        - name: $skip
+          in: query
+          description: Skip the specified number of services.
+          required: false
+          type: integer
+      responses:
+        '200':
+          description: Service response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/service'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    post:
+      tags:
+        - services
+      description: Creates a new service
+      operationId: addService
+      produces:
+        - application/json
+      parameters:
+        - name: service
+          in: body
+          description: Service to add
+          required: true
+          schema:
+            $ref: '#/definitions/service'
+      responses:
+        '200':
+          description: Empty response
+        '400':
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+  /services/{id}:
+    get:
+      tags:
+        - services
+      description: Returns a services based on service ID
+      operationId: findServiceById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ID of service to fetch
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: Service response
+          schema:
+            $ref: '#/definitions/service'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    patch:
+      tags:
+        - services
+      description: Updates a services based on service ID
+      operationId: updateServiceById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ID of service to fetch
+          required: true
+          type: integer
+          format: int64
+        - name: service
+          in: body
+          description: Service attributes to update
+          required: true
+          schema:
+            $ref: '#/definitions/service'
+      responses:
+        '200':
+          description: Service response
+          schema:
+            $ref: '#/definitions/service'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    delete:
+      tags:
+        - services
+      description: Deletes a single service based on the ID supplied
+      operationId: deleteservice
+      parameters:
+        - name: id
+          in: path
+          description: ID of service to delete
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: Service deleted
+        '400':
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+  /categories:
+    get:
+      tags:
+        - categories
+      description: Returns all categories that match the given filter criteria. If no filters are included, defaults to returning a paginated list of all categories.
+      operationId: findCategories
+      produces:
+        - application/json
+      parameters:
+        - name: $limit
+          in: query
+          description: Limit the number of categories returned.
+          required: false
+          type: integer
+        - name: $skip
+          in: query
+          description: Skip the specified number of categories.
+          required: false
+          type: integer
+      responses:
+        '200':
+          description: Category response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/category'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    post:
+      tags:
+        - categories
+      description: Creates a new category
+      operationId: addCategory
+      produces:
+        - application/json
+      parameters:
+        - name: category
+          in: body
+          description: Category to add
+          required: true
+          schema:
+            $ref: '#/definitions/category'
+      responses:
+        '200':
+          description: Empty response
+        '400':
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+  /categories/{id}:
+    get:
+      tags:
+        - categories
+      description: Returns a categories based on category ID
+      operationId: findCategoryById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ID of category to fetch
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: Category response
+          schema:
+            $ref: '#/definitions/category'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    patch:
+      tags:
+        - categories
+      description: Updates a categories based on category ID
+      operationId: updateCategoryById
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ID of category to update
+          required: true
+          type: integer
+          format: int64
+        - name: category
+          in: body
+          description: Category attributes to update
+          required: true
+          schema:
+            $ref: '#/definitions/category'
+      responses:
+        '200':
+          description: Category response
+          schema:
+            $ref: '#/definitions/category'
+        '400':
+          description: Error
+          schema:
+            $ref: '#/definitions/errorModel'
+    delete:
+      tags:
+        - categories
+      description: Deletes a single category based on the ID supplied
+      operationId: deletecategory
+      parameters:
+        - name: id
+          in: path
+          description: ID of category to delete
+          required: true
+          type: integer
+          format: int64
+      responses:
+        '200':
+          description: Category deleted
+        '400':
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/errorModel'
+  /version:
+    get:
+      tags:
+        - utilities
+      description: Returns the current version of the API Playground being run
+      operationId: getVersion
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Version response
+  /healthcheck:
+    get:
+      tags:
+        - utilities
+      description: Returns healthcheck information about the system
+      operationId: getHealthcheck
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Healthcheck response
+        '500':
+          description: Error
+definitions:
+  errorModel:
+    type: object
+    properties:
+      name:
+        type: string
+      message:
+        type: string
+      code:
+        type: integer
+      className:
+        type: string
+      errors:
+        type: object
+  product:
+    title: Product Schema
+    $schema: http://json-schema.org/draft-04/schema#
+    type: object
+    required:
+      - name
+      - type
+      - upc
+      - description
+      - model
+    additionalProperties: false
+    properties:
+      name:
+        type: string
+        maxLength: 100
+        minLength: 1
+      type:
+        type: string
+        maxLength: 30
+        minLength: 1
+      price:
+        name: Price
+        description: The Price Of the Product
+        type: number
+        multipleOf: 0.01
+      shipping:
+        type: number
+        multipleOf: 0.01
+      upc:
+        type: string
+        maxLength: 15
+        minLength: 1
+      description:
+        type: string
+        maxLength: 100
+        minLength: 1
+      manufacturer:
+        type: string
+        maxLength: 50
+        minLength: 1
+      model:
+        type: string
+        maxLength: 25
+        minLength: 1
+      url:
+        type: string
+        maxLength: 500
+        minLength: 1
+      image:
+        type: string
+        maxLength: 500
+        minLength: 1
+  store:
+    title: Store Schema
+    $schema: http://json-schema.org/draft-04/schema#
+    type: object
+    required:
+      - name
+      - address
+      - city
+      - state
+      - zip
+    additionalProperties: false
+    properties:
+      name:
+        type: string
+        maxLength: 100
+        minLength: 1
+      type:
+        type: string
+        maxLength: 30
+        minLength: 1
+      address:
+        type: string
+        maxLength: 50
+        minLength: 1
+      address2:
+        type: string
+        maxLength: 30
+      city:
+        type: string
+        maxLength: 50
+        minLength: 1
+      state:
+        type: string
+        maxLength: 30
+        minLength: 1
+      zip:
+        type: string
+        maxLength: 30
+        minLength: 1
+      lat:
+        type: number
+      lng:
+        type: number
+      hours:
+        type: string
+        maxLength: 100
+        minLength: 1
+      services:
+        type: object
+  service:
+    title: Service Schema
+    $schema: http://json-schema.org/draft-04/schema#
+    type: object
+    required:
+      - name
+    additionalProperties: false
+    properties:
+      name:
+        type: string
+        maxLength: 100
+        minLength: 1
+  category:
+    title: Category Schema
+    $schema: http://json-schema.org/draft-04/schema#
+    type: object
+    required:
+      - id
+      - name
+    additionalProperties: false
+    properties:
+      name:
+        type: string
+        maxLength: 100
+        minLength: 1
+      id:
+        type: string
+        maxLength: 100
+        minLength: 1

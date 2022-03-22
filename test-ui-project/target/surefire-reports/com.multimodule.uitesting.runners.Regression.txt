@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.multimodule.uitesting.runners.Regression
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 84.675 s <<< FAILURE! - in com.multimodule.uitesting.runners.Regression
+com.multimodule.uitesting.runners.Regression.runScenario["login invalid credentials", "Optional[Login]"](1)  Time elapsed: 61.644 s  <<< FAILURE!
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+
+com.multimodule.uitesting.runners.Regression.runScenario["login invalid credentials", "Optional[Login]"](2)  Time elapsed: 61.771 s  <<< FAILURE!
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+
+com.multimodule.uitesting.runners.Regression.runScenario["login invalid credentials", "Optional[Login]"](4)  Time elapsed: 65.292 s  <<< FAILURE!
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+
+com.multimodule.uitesting.runners.Regression.runScenario["login invalid credentials", "Optional[Login]"](6)  Time elapsed: 65.668 s  <<< FAILURE!
+org.apache.poi.poifs.filesystem.OfficeXmlFileException: The supplied data appears to be in the Office 2007+ XML. You are calling the part of POI that deals with OLE2 Office Documents. You need to call a different part of POI to process this data (eg XSSF instead of HSSF)
+

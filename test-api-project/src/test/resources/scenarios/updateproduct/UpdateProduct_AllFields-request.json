@@ -1,0 +1,12 @@
+{
+  "name": "Tiger",
+  "type": "Book",
+  "price": 1222,
+  "shipping": 2666,
+  "upc": "www.com",
+  "description": "Test product",
+  "manufacturer": "Test product",
+  "model": "Test product",
+  "url": "Test product",
+  "image": "Test product"
+}

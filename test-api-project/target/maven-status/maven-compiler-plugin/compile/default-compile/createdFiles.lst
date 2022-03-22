@@ -1,0 +1,3 @@
+com\multimodule\apitesting\driver\Assertions.class
+com\multimodule\apitesting\driver\HttpStatusCode.class
+com\multimodule\apitesting\driver\RequestBuilder.class
