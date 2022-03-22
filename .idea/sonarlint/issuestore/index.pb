@@ -61,9 +61,3 @@ ctest-api-project/test-reports/execution-reports-on 22-Mar-22 20-03-10/test-repo
 btest-ui-project/test-reports/execution-reports-on 22-Mar-22 20-11-48/test-reports/HTML-Report.html,7\a\7aa3b3c453f80536262e96339c4ea2a3ab15147f
 ~
 Ntest-ui-project/src/test/java/com/multimodule/uitesting/testbase/TestBase.java,9\6\965cb40fd09477047e158485242fe113720902b7
-
-Otest-ui-project/src/test/java/com/multimodule/uitesting/runners/Regression.java,2\5\253d0a0d333deafab7a9ed34cc85a6a59ec34e15
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
