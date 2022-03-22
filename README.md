@@ -12,7 +12,7 @@
 ***This project was designed as a part of dell assessment***
 
 
-##Key facts
+## Key facts
 
 1. the framework support parallel execution for web and api tests
 2. the framework support test execution reports /test-reports directory
@@ -25,7 +25,7 @@
 9. the UI tests are designed based on exploratory testing and all of them are green
 
 
-##Pre-requisites
+## Pre-requisites
 
 1. Install NodeJs
 
@@ -34,7 +34,7 @@
 3. Make sure the service is working well
 
 
-##Modules
+## Modules
 1. test-api-project: contains API related logic and test suites
 2. test-ui-project:  contains UI related logic (Page Object Model , Driver Factory) and test suites
 3. common-helpers: contains common libraries for both project (test resources readers , Excel parser and utils )
@@ -84,7 +84,7 @@ each project has two execution profiles (Regression (default): contains all test
 #### * UI tests: use the following maven command
     mvn install -pl test-ui-project -am -P Smoke
 
-##Execution proof:
+## Execution proof:
 ### API-project
 ![Alt Text](https://media.giphy.com/media/vkoVdRi0XbjyhI0nDZ/giphy.gif)
 
