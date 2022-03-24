@@ -9,8 +9,8 @@
 
 <h1>Test-Multi-Module-Project</h1>
 
-***This project was designed as a part of dell assessment***
 
+***This project was designed as a part of dell assessment for QA automation II***
 
 ## Key facts
 
