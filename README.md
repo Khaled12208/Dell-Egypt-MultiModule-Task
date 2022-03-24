@@ -9,8 +9,11 @@
 
 <h1>Test-Multi-Module-Project</h1>
 
+<dl>
+    <dt>This project was designed as a part of Dell Egypt assessment for QA automation II</dt>
+    <dd>its a multi-module project for automating web UI and API tests and ready to be integrated with jenkins.</dd>
+</dl>
 
-***This project was designed as a part of dell assessment for QA automation II***
 
 ## Key facts
 
